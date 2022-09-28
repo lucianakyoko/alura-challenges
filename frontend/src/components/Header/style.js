@@ -12,7 +12,7 @@ export const HeaderContainer = styled.header`
   }
   
   @media screen and (min-width: 1137px) {
-    padding: 3.75rem 0;
+    padding: 3.2rem 0;
     max-width: 113.6rem;
     margin: auto;
   }
