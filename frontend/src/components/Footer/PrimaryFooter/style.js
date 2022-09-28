@@ -135,7 +135,7 @@ export const FormContent = styled.form`
       font-family: 'Raleway', sans-serif;
       line-height: 2rem;
 
-      &::focus {
+      &:focus {
         outline: none;
       }
     }
