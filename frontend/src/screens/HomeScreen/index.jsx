@@ -3,6 +3,7 @@ import { HeroSection } from "./HeroSection";
 import { StarWarsSection } from "./StarWarsSection";
 import { ConsolesSection } from './ConsolesSection';
 import { MiscellaneousSection } from "./MiscellaneousSection";
+import { Footer } from "../../components/Footer";
 
 import {
   HomeScreenContainer,
@@ -20,6 +21,8 @@ export function HomeScreen() {
         <ConsolesSection />
         <MiscellaneousSection />
       </HomeProductSectionWrapper>
+
+      <Footer />
     </HomeScreenContainer>
   );
 }
