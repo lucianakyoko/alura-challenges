@@ -15,6 +15,8 @@ export const ProductItemContainer = styled.div`
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    position: relative;
   }
 
   h3 {
@@ -50,4 +52,15 @@ export const ProductItemContainer = styled.div`
       width: 17.6rem;
     }
   }
+`;
+
+export const ProductItemDeleteAndEditBtnWrapper = styled.span`
+  position: absolute;
+  top: .8rem;
+  right: .8rem;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+
 `;
