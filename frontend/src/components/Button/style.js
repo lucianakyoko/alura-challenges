@@ -8,6 +8,7 @@ export const ButtonContainer = styled.div`
       border: 1px solid ${colors.secondary.blue100};
       transition: all .3s ease;
       &.primary {
+        width: ${props => props.size};
         padding: 1.2rem 1.6rem;
         background-color: ${colors.secondary.blue100};
 
@@ -20,8 +21,7 @@ export const ButtonContainer = styled.div`
           border: 1px solid ${colors.secondary.blue80};
           cursor: pointer;
         }
-
-        }
+      }
       
       &.secondary {
         max-width: 13.3rem;

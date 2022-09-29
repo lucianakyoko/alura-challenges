@@ -40,7 +40,11 @@ export function PrimaryFooter() {
               <textarea name="message" id="message" placeholder='Escreva sua mensagem'></textarea>
             </div>
           </FormContent>
-          <Button title="Enviar mensagem" btnStyle="primary" />
+          <Button 
+            showBtn 
+            title="Enviar mensagem" 
+            btnStyle="primary" 
+          />
         </FormWrapper>
       </PrimaryFooterContendBox>
     </PrimaryFooterContainer>

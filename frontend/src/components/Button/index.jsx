@@ -1,8 +1,9 @@
 import { ButtonContainer } from './style';
 
-export function Button({type, href, title, btnStyle, showBtn}) {
+export function Button({size, type, href, title, btnStyle, showBtn}) {
   return(
-    <ButtonContainer 
+    <ButtonContainer
+      size={size}
       type={type}
       className={showBtn ? 'show-btn' : ''}
     >
