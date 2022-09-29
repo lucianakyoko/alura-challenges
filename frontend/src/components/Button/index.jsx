@@ -1,12 +1,14 @@
 import { ButtonContainer } from './style';
 
-export function Button({type,  title, btnStyle}) {
+export function Button({type, href, title, btnStyle, showBtn}) {
   return(
     <ButtonContainer 
       type={type}
-      className={btnStyle === 'primary' ? 'primary' : 'secondary'}
+      className={showBtn ? 'show-btn' : ''}
     >
-        {title}
+      <button className={btnStyle === 'primary' ? 'primary' : 'secondary'}>
+       <a href={href}>{title}</a> 
+      </button>
     </ButtonContainer>
   )
 }

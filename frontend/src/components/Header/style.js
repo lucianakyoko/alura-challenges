@@ -28,7 +28,16 @@ export const BtnAndSearchBarWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  &.dont-show-btn {
+    flex: 0;
+  }
+
   @media screen and (min-width: 767px) {
+    &.dont-show-btn {
+      flex-direction: row;
+      flex: 4;
+    }
+
     flex-direction: row-reverse;
     flex: 4;
   }

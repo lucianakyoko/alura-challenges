@@ -1,3 +1,5 @@
+import Nextlink from 'next/link';
+
 import { Button } from "../Button";
 import { Logo } from "../Logo";
 import { SearchBar } from "../SearchBar";
@@ -7,15 +9,20 @@ import {
   BtnAndSearchBarWrapper
 } from './style';
 
-export function Header() {
+export function Header({btnTitle, btnStyle, btnShow, btnHref}) {
   return (
     <HeaderContainer>
       <LogoWrapper>
         <Logo />
       </LogoWrapper>
 
-      <BtnAndSearchBarWrapper>
-        <Button title={'Login'} btnStyle='secondary' /> 
+      <BtnAndSearchBarWrapper className={!btnShow ? 'dont-show-btn' : ''}>
+        <Button 
+          href={btnHref} 
+          title={btnTitle} 
+          btnStyle={btnStyle} 
+          showBtn={btnShow}
+        /> 
         <SearchBar />
       </BtnAndSearchBarWrapper>
     </HeaderContainer>

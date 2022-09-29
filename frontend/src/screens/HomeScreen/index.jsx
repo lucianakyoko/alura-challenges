@@ -13,7 +13,7 @@ import {
 export function HomeScreen() {
   return(
     <HomeScreenContainer>
-      <Header />
+      <Header btnHref='/login' btnTitle='Login' btnStyle='secondary' btnShow={true} />
       <HeroSection />
 
       <HomeProductSectionWrapper>

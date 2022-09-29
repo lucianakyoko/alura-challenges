@@ -12,7 +12,12 @@ export function HeroSection() {
       <HeroSectionContentWrapper>
         <HeroSectionTitle>Dezembro Promocional</HeroSectionTitle>
         <HeroSectionParagraph>Produtos selecionados com 33% de desconto</HeroSectionParagraph>
-        <Button title='Ver Consoles' btnStyle='primary'/>
+        <Button 
+          title='Ver Consoles' 
+          btnStyle='primary' 
+          showBtn
+          href='/consoles'
+        />
       </HeroSectionContentWrapper>
     </HeroSectionContainer>
   );
