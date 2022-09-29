@@ -7,7 +7,9 @@ export function Logo({isFixedSize}) {
     <NextLink href='/'>
       <a>
         <LogoContainer
-        className={isFixedSize ? 'fixed-size' : ''}      
+        className={isFixedSize ? 'fixed-size' : ''}
+        width= '176px'
+        height= '50px'      
         xmlns="http://www.w3.org/2000/svg"
         fill="none"
         viewBox="0 0 100 28"
