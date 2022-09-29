@@ -11,5 +11,7 @@ export const colors = {
     blue80: '#5595E9',
     blue20: '#D4E4FA',
     blue10: '#EAF2FD',
+    orange80: '#E4782A',
+    red80: '#E42A2A'
   }
 };
