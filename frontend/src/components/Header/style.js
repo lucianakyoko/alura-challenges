@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { colors } from "../../styles/colors";
 
 export const HeaderContainer = styled.header`
   padding: 1.6rem;
@@ -6,6 +7,8 @@ export const HeaderContainer = styled.header`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  
+  background-color: ${colors.primary.white100};
 
   @media screen and (min-width: 767px) {
     padding: 1.6rem 3.2rem;
