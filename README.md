@@ -45,6 +45,7 @@ O site e o e-commerce deve conter os seguintes requisitos:
 As ferramentas e tecnologias eram de livre escolha. Eu escolhi desenvolver o projeto com:
 
 <ul>
+  <li>React</li>
   <li>Next.js</li>
   <li>Styled-Components</li>
 </ul>
@@ -63,7 +64,7 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 
 | Semana | Sprint | Trello |Status |
 | --- | --- | --- | --- |
-| 01 | Criando minha loja: interface cliente | [link](https://trello.com/b/YahtquUC/challenge-front-end-semana-1) | 🔵 |
+| 01 | Criando minha loja: interface cliente | [link](https://trello.com/b/YahtquUC/challenge-front-end-semana-1) | ✔️ |
 | 02 | ➖ | ➖ | ⚫ |
 | 03 | ➖ | ➖ | ⚫ |
 | 04 | ➖ | ➖ | ⚫ |
