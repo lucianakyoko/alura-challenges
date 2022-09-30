@@ -5,12 +5,12 @@ import {
   HomeSectionUIHeader,
 } from './style';
 
-export function ProductsSectionUI({title, children}) {
+export function ProductsSectionUI({title, children, showMoreBtn}) {
   return(
     <HomeSectionUIContainer>
       <HomeSectionUIHeader>
         <h2>{title}</h2>
-        <div>
+        <div className={showMoreBtn ? '' : 'dont-show-btn'}>
           <NextLink href='/'>
             <a>ver tudo</a>
           </NextLink>

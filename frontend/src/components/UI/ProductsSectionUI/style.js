@@ -21,6 +21,7 @@ export const HomeSectionUIHeader = styled.header`
   align-items: center;
   justify-content: space-between;
 
+
   h2 {
     color: ${colors.primary.black100};
     font-size: 2.2rem;
@@ -54,5 +55,9 @@ export const HomeSectionUIHeader = styled.header`
         line-height: 1.9rem;
       }
     }
+  }
+
+  .dont-show-btn {
+    display: none;
   }
 `;

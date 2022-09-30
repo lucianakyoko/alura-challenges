@@ -3,7 +3,7 @@ import { ProductsSectionUI } from '../../../components/UI/ProductsSectionUI';
 
 export function MiscellaneousSection() {
   return (
-    <ProductsSectionUI title="Diversos">
+    <ProductsSectionUI title="Diversos" showMoreBtn>
       <ProductList />
     </ProductsSectionUI>
   );

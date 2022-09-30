@@ -3,7 +3,7 @@ import { ProductsSectionUI } from '../../../components/UI/ProductsSectionUI';
 
 export function ConsolesSection() {
   return (
-    <ProductsSectionUI title="Consoles">
+    <ProductsSectionUI title="Consoles" showMoreBtn>
       <ProductList />
     </ProductsSectionUI>
   );
