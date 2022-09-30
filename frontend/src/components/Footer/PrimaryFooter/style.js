@@ -116,9 +116,10 @@ export const FormContent = styled.form`
     gap: .4rem;
 
     background-color: ${colors.primary.white100};
-    border-bottom: 1px solid ${colors.primary.black30};
+    border-bottom: 1px solid transparent;
     border-radius:  .8rem;
 
+    transition: all .4s ease;
     label {
       color: ${colors.primary.black50};
       font-size: 1.2rem;
@@ -138,6 +139,11 @@ export const FormContent = styled.form`
       &:focus {
         outline: none;
       }
+    }
+
+    &:hover {
+      cursor: text;
+      border-bottom: 1px solid ${colors.primary.black30};
     }
   }
 `;
