@@ -24,8 +24,7 @@ export const ButtonContainer = styled.div`
       }
       
       &.secondary {
-        max-width: 13.3rem;
-        padding: 1.2rem 4.75rem;
+        padding: ${props => props.padding};
         background-color: ${colors.primary.white100};
         a {
           color: ${colors.secondary.blue100};
@@ -51,7 +50,7 @@ export const ButtonContainer = styled.div`
   @media screen and (min-width: 767px) {
 
     &.secondary {
-      max-width: 16.6rem;
+      /* max-width: 16.6rem; */
       padding: 1.2rem 6.4rem;
     }
   }
@@ -62,7 +61,7 @@ export const ButtonContainer = styled.div`
     line-height: 1.878rem;
     
     &.secondary {
-      max-width: 18.2rem;
+      /* max-width: 18.2rem; */
     }
 
     &.primary {

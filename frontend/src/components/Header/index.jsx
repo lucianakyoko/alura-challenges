@@ -9,7 +9,7 @@ import {
   BtnAndSearchBarWrapper
 } from './style';
 
-export function Header({btnTitle, btnStyle, btnShow, btnHref}) {
+export function Header({btnTitle, btnStyle, btnShow, btnHref, padding}) {
   return (
     <HeaderContainer>
       <LogoWrapper>
@@ -22,6 +22,7 @@ export function Header({btnTitle, btnStyle, btnShow, btnHref}) {
           title={btnTitle} 
           btnStyle={btnStyle} 
           showBtn={btnShow}
+          padding={padding}
         /> 
         <SearchBar />
       </BtnAndSearchBarWrapper>
