@@ -2,11 +2,8 @@ import styled from "styled-components";
 import { colors } from "../../styles/colors";
 
 export const HeaderContainer = styled.header`
+  width: 100%;
   padding: 1.6rem;
-  
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
   
   background-color: ${colors.primary.white100};
 
@@ -16,6 +13,15 @@ export const HeaderContainer = styled.header`
   
   @media screen and (min-width: 1137px) {
     padding: 3.2rem 0;
+  }
+`;
+
+export const HeaderContentWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media screen and (min-width: 1137px) {
     max-width: 113.6rem;
     margin: auto;
   }
