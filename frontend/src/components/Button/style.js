@@ -35,6 +35,21 @@ export const ButtonContainer = styled.div`
         }
       }
 
+      &.danger {
+        padding: 1.2rem 1.6rem;
+        background-color: ${colors.secondary.red80};
+        border: none;
+
+        a {
+          color: ${colors.primary.white100};
+        }
+
+        &:hover {
+          background-color: ${colors.secondary.red50};
+          cursor: pointer;
+        }
+      }
+
       a {
         font-size: 1.4rem;
         font-weight: 600;
