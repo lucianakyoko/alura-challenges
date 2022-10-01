@@ -4,7 +4,7 @@ import { ProductsSectionUI } from '../../../components/UI/ProductsSectionUI';
 export function MiscellaneousSection() {
   return (
     <ProductsSectionUI title="Diversos" showMoreBtn>
-      <ProductList />
+      <ProductList category='miscellaneous' />
     </ProductsSectionUI>
   );
 }

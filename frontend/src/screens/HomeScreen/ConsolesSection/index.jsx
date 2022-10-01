@@ -4,7 +4,7 @@ import { ProductsSectionUI } from '../../../components/UI/ProductsSectionUI';
 export function ConsolesSection() {
   return (
     <ProductsSectionUI title="Consoles" showMoreBtn>
-      <ProductList />
+      <ProductList category='consoles' />
     </ProductsSectionUI>
   );
 }

@@ -11,11 +11,11 @@ export function ProductItem({imgSrc, title, price, isAllowed}) {
   return(
     <ProductItemContainer imgSrc={imgSrc}>
       <div isAllowed={isAllowed}>
-        {isAllowed && 
+        {isAllowed &&
           <ProductItemDeleteAndEditBtnWrapper>
             <span><DeleteIcon /></span>
             <span><EditIcon /></span>
-          </ProductItemDeleteAndEditBtnWrapper>        
+          </ProductItemDeleteAndEditBtnWrapper>
         }
       </div>
       
