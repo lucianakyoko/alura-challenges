@@ -10,6 +10,7 @@
   <a href="#-challenge">Challenge</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sprints">Sprints</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-aprendizados">Aprendizados</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-preview">Preview</a> 
 </p>
 
@@ -65,9 +66,15 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 | Semana | Sprint | Trello |Status |
 | --- | --- | --- | --- |
 | 01 | Criando minha loja: interface cliente | [link](https://trello.com/b/YahtquUC/challenge-front-end-semana-1) | ✔️ |
-| 02 | ➖ | ➖ | ⚫ |
+| 02 | Avançando no projeto: produtos e login | [link](https://trello.com/b/DelwGaI3/challenge-front-end-semana-2) | 🔵 |
 | 03 | ➖ | ➖ | ⚫ |
 | 04 | ➖ | ➖ | ⚫ |
+
+--- 
+
+## 📝 Aprendizados
+
+
 
 --- 
 
