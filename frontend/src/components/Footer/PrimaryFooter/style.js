@@ -66,7 +66,6 @@ export const LogoAndLinksWrapper = styled.div`
 
   @media screen and (min-width: 1130px) {  
     padding-right: 0;
-    background-color: aliceblue;
     flex-direction: row;
     justify-content: space-between;
     gap: 11.2rem;
