@@ -1,5 +1,7 @@
 import { getProducts } from '../../datas';
-import { Modal } from '../Modal';
+import { DeleteMessageModal } from '../DeleteMessageModal';
+import { EditMessageModal } from '../EditMessageModal';
+import { EditModal } from '../EditModal';
 import { ProductItem } from '../ProductItem';
 import {
   ProjectListContainer,
@@ -29,7 +31,9 @@ export function ProductList({isAllowed, category}) {
       />
       ))
     } 
-      <Modal />
+      {/* <DeleteMessageModal /> */}
+      {/* <EditMessageModal /> */}
+      {/* <EditModal /> */}
     </ProjectListContainer>
   );
 
