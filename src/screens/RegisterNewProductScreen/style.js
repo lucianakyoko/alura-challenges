@@ -73,3 +73,20 @@ export const RegisterNewProductInputWrapper = styled.div`
     border-bottom: 1px solid ${colors.primary.black30};
   }
 `;
+
+export const PriceAndCategoryWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.6rem;
+
+  div {
+    width: 100%;
+
+    label, input {
+      width: 100%;
+    }
+  }
+
+`;

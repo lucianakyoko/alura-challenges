@@ -7,6 +7,7 @@ import {
   RegisterNewProductContentWrapper,
   RegisterNewProductFormWrapper,
   RegisterNewProductInputWrapper,
+  PriceAndCategoryWrapper
 } from './style';
 
 export function RegisterNewProductScreen() {
@@ -28,10 +29,17 @@ export function RegisterNewProductScreen() {
             <input type="text" name="url" id="url"/>
           </RegisterNewProductInputWrapper>
             
-          <RegisterNewProductInputWrapper>
-            <label htmlFor="category">Categoria</label>
-            <input type="text" name="category" id="category" />
-          </RegisterNewProductInputWrapper>
+          <PriceAndCategoryWrapper>
+            <RegisterNewProductInputWrapper>
+              <label htmlFor="category">Categoria</label>
+              <input type="text" name="category" id="category" />
+            </RegisterNewProductInputWrapper>
+
+            <RegisterNewProductInputWrapper>
+              <label htmlFor="price">Preço</label>
+              <input type="number" name="price" id="price" />
+            </RegisterNewProductInputWrapper>
+          </PriceAndCategoryWrapper>
             
           <RegisterNewProductInputWrapper>
             <label htmlFor="product">Nome do produto</label>
