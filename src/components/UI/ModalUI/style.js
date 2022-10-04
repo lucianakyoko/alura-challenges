@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { colors } from "../../styles/colors";
+import { colors } from "../../../styles/colors";
 
 export const ModalContainer = styled.div`
   width: 100%;
@@ -7,15 +7,11 @@ export const ModalContainer = styled.div`
 
   background: rgba(0, 0, 0, 0.8);
 
-  display: none;
+  display: flex;
 
   position: fixed;
   left: 0;
   top: 0;
-
-  &.modal-active {
-    display: flex;
-  }
 `;
 
 export const ModalContent = styled.div`
@@ -42,7 +38,6 @@ export const ModalContent = styled.div`
     text-align: center;
   }
 
-  
   @media screen and (min-width: 767px) {
     max-width: 60rem;
     padding: 3.2rem;
@@ -53,23 +48,7 @@ export const ModalProductDetail = styled.div `
   width: 100%;
   padding: 1.2rem;
 
-  display: flex;
-  align-items: flex-start;
-  gap: 1.6rem;
-
   background-color: ${colors.primary.black05};
-  
-  div {
-    h3 {
-      color: ${colors.primary.black100};
-      font-size: 1.6rem;
-    }
-    
-    span {
-      color: ${colors.primary.black50};
-      font-size: 1.6rem;
-    }
-  }
 `;
 
 export const ModalProductImageContainer = styled.div`
