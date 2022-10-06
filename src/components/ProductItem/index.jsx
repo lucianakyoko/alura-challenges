@@ -7,14 +7,23 @@ import {
   ProductItemDeleteAndEditBtnWrapper,
 } from './style';
 
-export function ProductItem({imgSrc, title, price, isAllowed}) {
+export function ProductItem(props) {
+  const {
+    imgSrc, 
+    title, 
+    price, 
+    isAllowed,
+    openDeleteModal,
+    openEditModal,
+  }= props;
+
   return(
     <ProductItemContainer imgSrc={imgSrc}>
       <div isAllowed={isAllowed}>
         {isAllowed &&
           <ProductItemDeleteAndEditBtnWrapper>
-            <span><DeleteIcon /></span>
-            <span><EditIcon /></span>
+            <span onClick={openDeleteModal}><DeleteIcon /></span>
+            <span onClick={openEditModal}><EditIcon /></span>
           </ProductItemDeleteAndEditBtnWrapper>
         }
       </div>

@@ -8,13 +8,15 @@ import {
   DescriptionWrapper,
 } from './style';
 
-export function EditMessageModal() {
+export function EditMessageModal({closeModal}) {
   return(
     <ModalUI
       modalTitle="Editar produto"
       modalText="Editar o produto abaixo?"
       btnTitle="Sim, editar"
       btnStyle="primary"
+      onClickFunction={closeModal}
+      handleClickFunction={closeModal}
     >
       <EditMessageModalContainer>
         <ImageAndDetailWrapper>

@@ -14,6 +14,8 @@ export function ModalUI(props) {
     modalText,
     btnTitle,
     btnStyle,
+    onClickFunction,
+    handleClickFunction
   } = props;
 
   return(
@@ -28,16 +30,17 @@ export function ModalUI(props) {
 
         <ModalBtnWrapper>
           <Button 
-            href='/produtos' 
             title="cancelar"
             btnStyle='secondary'
             padding='1.2rem 1.6rem'
             showBtn
+            onClickFunction={onClickFunction}
           />
           <Button 
             title={btnTitle}
             btnStyle={btnStyle}
             showBtn
+            onClickFunction={handleClickFunction}
           />
         </ModalBtnWrapper>
       </ModalContent>

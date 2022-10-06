@@ -7,13 +7,14 @@ import {
   EditModalInputWrapper,
 } from './style';
 
-export function EditModal() {
+export function EditModal({closeModal}) {
   return(
     <ModalUI
       modalTitle="Editar produto"
       modalText="Edite os campos que deseja alterar e clique em salvar."
       btnTitle="Salvar"
       btnStyle="primary"
+      onClickFunction={closeModal}
     >
 
       <EditModalContainer>

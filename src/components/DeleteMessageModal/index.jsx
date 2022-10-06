@@ -6,13 +6,14 @@ import {
   DeleteModalContentWrapper,
 } from './style';
 
-export function DeleteMessageModal() {
+export function DeleteMessageModal({closeModal}) {
   return(
     <ModalUI
       modalTitle="Excluir produto"
       modalText="Tem certeza que deseja excluir o produto abaixo?"
       btnTitle="Sim, excluir"
       btnStyle="danger"
+      onClickFunction={closeModal}
     >
       <DeleteModalContainer>
         <ModalProductImageContainer></ModalProductImageContainer>

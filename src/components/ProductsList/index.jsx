@@ -1,13 +1,23 @@
+import { useModal } from '../../hooks/useModal';
 import { getProducts } from '../../datas';
-import { DeleteMessageModal } from '../DeleteMessageModal';
-import { EditMessageModal } from '../EditMessageModal';
-import { EditModal } from '../EditModal';
 import { ProductItem } from '../ProductItem';
+import { DeleteMessageModal } from '../DeleteMessageModal';
+
 import {
   ProjectListContainer,
 } from './style';
+import { EditModal } from '../EditModal';
 
 export function ProductList({isAllowed, category}) {
+  const {
+    isDeleteMessageModalOpened,
+    isEditModalOpened,
+    openDeleteMessageModal,
+    closeDeleteMessageModal,
+    openEditModal,
+    closeEditModal,
+  } = useModal();
+
   const allProducts = getProducts();
   const categoryList = allProducts.filter(item => item.category === `${category}`);
 
@@ -27,13 +37,14 @@ export function ProductList({isAllowed, category}) {
           isAllowed={isAllowed}
           imgSrc={item.imgSrc} 
           title={item.title} 
-          price={item.price} 
-      />
+          price={item.price}
+          openDeleteModal={openDeleteMessageModal} 
+          openEditModal={openEditModal} 
+        />
       ))
     } 
-      {/* <DeleteMessageModal /> */}
-      {/* <EditMessageModal /> */}
-      {/* <EditModal /> */}
+      {isDeleteMessageModalOpened ? <DeleteMessageModal closeModal={closeDeleteMessageModal}/> : null}
+      {isEditModalOpened ? <EditModal closeModal={closeEditModal} /> : null }
     </ProjectListContainer>
   );
 
