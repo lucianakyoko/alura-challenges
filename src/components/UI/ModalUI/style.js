@@ -12,6 +12,7 @@ export const ModalContainer = styled.div`
   position: fixed;
   left: 0;
   top: 0;
+  z-index: 2;
 `;
 
 export const ModalContent = styled.div`
@@ -48,23 +49,5 @@ export const ModalProductDetail = styled.div `
   width: 100%;
   padding: 1.2rem;
 
-  background-color: ${colors.primary.black05};
-`;
-
-export const ModalProductImageContainer = styled.div`
-  width: 12rem;
-  height: 8rem;
-
-  background-color: yellowgreen;
-
-  @media screen and (min-width: 767px) {
-    width: 20rem;
-    height: 12rem;
-  }
-`;
-
-export const ModalBtnWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  gap: 3.2rem;
+  /* background-color: ${colors.primary.black05}; */
 `;

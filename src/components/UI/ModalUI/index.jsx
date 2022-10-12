@@ -3,8 +3,7 @@ import { Button } from "../../Button";
 import {
   ModalContainer,
   ModalContent,
-  ModalProductDetail,
-  ModalBtnWrapper
+  ModalProductDetail
 } from './style';
 
 export function ModalUI(props) {
@@ -12,10 +11,6 @@ export function ModalUI(props) {
     children,
     modalTitle,
     modalText,
-    btnTitle,
-    btnStyle,
-    onClickFunction,
-    handleClickFunction
   } = props;
 
   return(
@@ -27,22 +22,6 @@ export function ModalUI(props) {
         <ModalProductDetail>
           { children }
         </ModalProductDetail>
-
-        <ModalBtnWrapper>
-          <Button 
-            title="cancelar"
-            btnStyle='secondary'
-            padding='1.2rem 1.6rem'
-            showBtn
-            onClickFunction={onClickFunction}
-          />
-          <Button 
-            title={btnTitle}
-            btnStyle={btnStyle}
-            showBtn
-            onClickFunction={handleClickFunction}
-          />
-        </ModalBtnWrapper>
       </ModalContent>
     </ModalContainer>
   );
