@@ -17,7 +17,7 @@ export function RegisterNewProductScreen() {
         btnShow
         btnTitle='Menu administrador'
         btnStyle='secondary'
-        btnHref='/produtos'
+        btnHref='/dashboard'
         padding='1.6rem'
       />
       
