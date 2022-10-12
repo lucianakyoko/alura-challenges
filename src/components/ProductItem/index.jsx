@@ -1,36 +1,25 @@
 import NextLink from 'next/link';
-import { DeleteIcon } from '../icons/DeleteIcon';
-import { EditIcon } from '../icons/EditIcon';
 
 import { 
   ProductItemContainer,
-  ProductItemDeleteAndEditBtnWrapper,
+  ProductItemImageWrapper,
 } from './style';
 
 export function ProductItem(props) {
   const {
+    id,
     imgSrc, 
     title, 
     price, 
-    isAllowed,
-    openDeleteModal,
-    openEditModal,
-  }= props;
+  } = props;
 
   return(
     <ProductItemContainer imgSrc={imgSrc}>
-      <div isAllowed={isAllowed}>
-        {isAllowed &&
-          <ProductItemDeleteAndEditBtnWrapper>
-            <span onClick={openDeleteModal}><DeleteIcon /></span>
-            <span onClick={openEditModal}><EditIcon /></span>
-          </ProductItemDeleteAndEditBtnWrapper>
-        }
-      </div>
+      <ProductItemImageWrapper imgSrc={imgSrc}></ProductItemImageWrapper>
       
       <h3>{title}</h3>
       <span>R$ {price}</span>
-      <NextLink href='/'>
+      <NextLink href={`/produtos/${id}`}>
         <a >ver produto</a>
       </NextLink>
     </ProductItemContainer>

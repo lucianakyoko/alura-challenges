@@ -7,18 +7,6 @@ export const ProductItemContainer = styled.div`
   align-items: flex-start;
   gap: .8rem;
 
-  div {
-    width: 15.6rem;
-    height: 17.4rem;
-
-    background-image: url(${props => props.imgSrc});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    position: relative;
-  }
-
   h3 {
     color: ${colors.primary.black100};
     font-size: 1.4rem;
@@ -54,13 +42,14 @@ export const ProductItemContainer = styled.div`
   }
 `;
 
-export const ProductItemDeleteAndEditBtnWrapper = styled.span`
-  position: absolute;
-  top: .8rem;
-  right: .8rem;
+export const ProductItemImageWrapper = styled.div`
+  width: 15.6rem;
+  height: 17.4rem;
 
-  display: flex;
-  align-items: center;
-  gap: 1.6rem;
+  background-image: url(${props => props.imgSrc});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
+  position: relative;
 `;
