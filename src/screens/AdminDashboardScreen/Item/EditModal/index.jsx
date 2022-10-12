@@ -28,29 +28,53 @@ export function EditModal(props) {
         <EditModalFormWrapper action="">
           <EditModalInputWrapper>
             <label htmlFor="product">Nome do produto</label>
-            <input type="text" name="product" id="product" value={productName}/>
+            <input 
+              type="text" 
+              name="product" 
+              id="product" 
+              // value={productName}
+            />
           </EditModalInputWrapper>
 
           <EditModalInputWrapper>
             <label htmlFor="url">URL da imagem</label>
-            <input type="text" name="url" id="url" value={img}/>
+            <input 
+            type="text" 
+            name="url" 
+            id="url" 
+            // value={img}
+          />
           </EditModalInputWrapper>
 
           <PriceAndCategoryWrapper>
             <EditModalInputWrapper>
               <label htmlFor="category">Categoria</label>
-              <input type="text" name="category" id="category" value={category} />
+              <input 
+                type="text" 
+                name="category" 
+                id="category" 
+                // value={category} 
+              />
             </EditModalInputWrapper>
 
             <EditModalInputWrapper>
               <label htmlFor="price">Preço</label>
-              <input type="text" name="price" id="price" value={price}/>
+              <input 
+                type="text" 
+                name="price" 
+                id="price" 
+                // value={price}
+              />
             </EditModalInputWrapper>
           </PriceAndCategoryWrapper>
 
           <EditModalInputWrapper>
             <label htmlFor="description">Descrição do produto</label>
-            <textarea name="description" id="description" value={description}></textarea>
+            <textarea 
+              name="description" 
+              id="description" 
+              // value={description}
+            ></textarea>
           </EditModalInputWrapper>
         </EditModalFormWrapper>
 
