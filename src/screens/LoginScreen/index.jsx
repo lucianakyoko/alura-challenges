@@ -24,7 +24,7 @@ export function LoginScreen() {
           <Button 
             size={'100%'}
             showBtn 
-            href='/produtos'
+            href='/dashboard'
             title='Entrar'
             btnStyle='primary'
           />
