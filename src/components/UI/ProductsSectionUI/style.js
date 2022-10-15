@@ -27,6 +27,7 @@ export const HomeSectionUIHeader = styled.header`
     font-size: 2.2rem;
     font-weight: 700;
     line-height: 2.6rem;
+    text-transform: capitalize;
     
     @media screen and (min-width: 1000px) {
       font-size: 3.2rem;
