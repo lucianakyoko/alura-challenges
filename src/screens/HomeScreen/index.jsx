@@ -1,8 +1,6 @@
 import { Header } from "../../components/Header";
 import { HeroSection } from "./HeroSection";
-import { StarWarsSection } from "./StarWarsSection";
-import { ConsolesSection } from './ConsolesSection';
-import { MiscellaneousSection } from "./MiscellaneousSection";
+import { ProductSection } from './ProductSection';
 import { Footer } from "../../components/Footer";
 
 import {
@@ -10,7 +8,10 @@ import {
   HomeProductSectionWrapper
 } from './style';
 
-export function HomeScreen() {
+export function HomeScreen({products}) {
+  const categoryList = products.map(item => item.category);
+  const productsSections = [...new Set(categoryList)];
+
   return(
     <HomeScreenContainer>
       <Header 
@@ -20,12 +21,18 @@ export function HomeScreen() {
         padding='1.2rem 4.75rem'
         btnShow={true} 
       />
+
       <HeroSection />
 
       <HomeProductSectionWrapper>
-        <StarWarsSection />
-        <ConsolesSection />
-        <MiscellaneousSection />
+        {
+          productsSections.map(section => (
+            <ProductSection 
+              key={section}
+              title={section} 
+              productsList={products} />
+          ))
+        }
       </HomeProductSectionWrapper>
 
       <Footer />
