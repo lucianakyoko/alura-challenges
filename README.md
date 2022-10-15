@@ -58,6 +58,15 @@ As ferramentas e tecnologias eram de livre escolha. Eu escolhi desenvolver o pro
   <li>Axios</li>
 </ul>
 
+---
+
+## 🔐 Login
+Para acessar o dashboard do projeto utilize o e-mail e senha abaixo:
+
+```
+E-mail: admin@email.com
+Senha: aluraGeeks123
+```
 
 ---
 

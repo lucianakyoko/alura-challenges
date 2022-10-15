@@ -7,11 +7,13 @@ import {
   HomeScreenContainer,
   HomeProductSectionWrapper
 } from './style';
+import { useState } from "react";
 
 export function HomeScreen({products}) {
+  const[showLast6products, setShowLast6Products] = useState(false);
   const categoryList = products.map(item => item.category);
   const productsSections = [...new Set(categoryList)];
-
+  
   return(
     <HomeScreenContainer>
       <Header 
@@ -30,6 +32,8 @@ export function HomeScreen({products}) {
             <ProductSection 
               key={section}
               title={section} 
+              showLast6products={showLast6products}
+              setShowLast6Products={setShowLast6Products}
               productsList={products} />
           ))
         }
