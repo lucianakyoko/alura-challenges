@@ -88,5 +88,84 @@ export const PriceAndCategoryWrapper = styled.div`
       width: 100%;
     }
   }
-
 `;
+
+export const PostMessageModal = styled.div`
+  width: 100%;
+  height: 100vh;
+  
+  position: fixed;
+  top: 0;
+  left:0;
+
+  background: rgba(0, 0, 0, 0.7);
+
+  div {
+    
+  }
+`;
+
+export const PostMessageModalContentWrapper = styled.div`
+    width: 90%;
+    max-width: 40rem;
+    height: 20rem;
+    padding: 2.4rem;
+    background-color: ${colors.primary.white100};
+  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 4rem;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    p {
+      color: ${colors.secondary.green80};
+      font-size: 1.6rem;
+    }
+`;
+
+export const ErrMessage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+
+  h3 {
+    color: ${colors.secondary.red80};
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: ${colors.secondary.red80};
+    text-align: center;
+  }
+`;
+
+export const SuccessMessage = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.2rem;
+
+  h3 {
+    color: ${colors.secondary.green80};
+    text-align: center;
+  }
+
+  p {
+    font-size: 1.4rem;
+    color: ${colors.secondary.green80};
+    text-align: center;
+  }
+`;
+
+
+
+
+
