@@ -36,7 +36,10 @@ export const ProductItemContentWrapper = styled.div`
 
 export const ProductImageBox = styled.div`
   height: 19.2rem;
-  background-color: aquamarine;
+  background-image: url(${props => props.img});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
   @media screen and (min-width: 767px) {
     min-width: 25.4rem;
@@ -44,7 +47,6 @@ export const ProductImageBox = styled.div`
     height: 15.7rem;
     background-color: blue;
   }
-
   
   @media screen and (min-width: 1130px) {
     min-width: 56rem;

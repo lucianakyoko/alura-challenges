@@ -10,31 +10,22 @@ import {
   ProductItemDetailsWrapper,
 } from './style';
 
-export function ProductItemScreen(props) {
-  const {
-    img,
-    productName,
-    price,
-    description,
-    category
-  } = props;
-
+export function ProductItemScreen({product, products}) {
   return(
     <ProductItemScreenContainer>
       <Header />
-
       <ProductItemScreenContentBox>
         <ProductItemContentWrapper>
-          <ProductImageBox></ProductImageBox>
+          <ProductImageBox img={product.imgSrc}></ProductImageBox>
           <ProductItemDetailsWrapper>
-            <h2>{productName}</h2>
-            <span>R$ {price}</span>
-            <p>{description}</p>
+            <h2>{product.title}</h2>
+            <span>R$ {product.price}</span>
+            <p>{product.descrition}</p>
           </ProductItemDetailsWrapper>
         </ProductItemContentWrapper>
 
         <ProductsSectionUI title='Produtos similares'>
-          <ProductList category={category} />
+          <ProductList  category={product.category} productsList={products}/>
         </ProductsSectionUI>
       </ProductItemScreenContentBox>
 
