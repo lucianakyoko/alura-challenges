@@ -62,3 +62,8 @@ export const DeleteModalBtnWrapper = styled.div`
   gap: 3.2rem;
 `;
 
+export const DeleteModalErrorMessage = styled.span`
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: ${colors.secondary.red80};
+`;

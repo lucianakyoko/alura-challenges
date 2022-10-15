@@ -9,7 +9,8 @@ import {
   AdminDashboardTitleAndBtnWrapper,
 }  from './style';
 
-export function AdminDashboardScreen() {
+export function AdminDashboardScreen({products}) {
+
   return(
     <AdminDashboardScreenContainer>
       <Header />
@@ -25,7 +26,7 @@ export function AdminDashboardScreen() {
           />
         </AdminDashboardTitleAndBtnWrapper>
 
-        <ItemsList />
+        <ItemsList products={products} />
       </AdminDashboardContentWrapper>
 
       <Footer />

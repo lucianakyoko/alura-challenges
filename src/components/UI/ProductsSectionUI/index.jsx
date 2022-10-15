@@ -11,7 +11,7 @@ export function ProductsSectionUI({title, children, showMoreBtn}) {
       <HomeSectionUIHeader>
         <h2>{title}</h2>
         <div className={showMoreBtn ? '' : 'dont-show-btn'}>
-          <NextLink href='/'>
+          <NextLink href='/produtos'>
             <a>ver tudo</a>
           </NextLink>
           <span>

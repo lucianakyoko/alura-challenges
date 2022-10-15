@@ -18,7 +18,7 @@ export function Button(props) {
       type={type}
       className={showBtn ? 'show-btn' : ''}
     >
-      <button onClick={onClickFunction}
+      <button onClick={onClickFunction} 
         className={btnStyle === 'primary' ? 'primary' : btnStyle === 'secondary' ? 'secondary' : 'danger'}>
        <a href={href}>{title}</a> 
       </button>

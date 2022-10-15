@@ -12,7 +12,7 @@ export function ProductItem(props) {
     title, 
     price, 
   } = props;
-
+  
   return(
     <ProductItemContainer imgSrc={imgSrc}>
       <ProductItemImageWrapper imgSrc={imgSrc}></ProductItemImageWrapper>
@@ -20,7 +20,7 @@ export function ProductItem(props) {
       <h3>{title}</h3>
       <span>R$ {price}</span>
       <NextLink href={`/produtos/${id}`}>
-        <a >ver produto</a>
+        <a>ver produto</a>
       </NextLink>
     </ProductItemContainer>
   );

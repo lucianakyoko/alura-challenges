@@ -23,7 +23,7 @@ export const EditModalFormWrapper = styled.form`
 
 export const PriceAndCategoryWrapper = styled.div`
   width: fit-content;
-  
+
   display: flex;
   align-items: center;
   gap: 1.6rem;
@@ -65,16 +65,11 @@ export const EditModalInputWrapper = styled.div`
   }
 `;
 
-
-
-
-
-
-
-
-
-
-
+export const InputErrMsg = styled.span`
+  color: ${colors.secondary.red80};
+  font-size: 1.4rem;
+  font-weight: 500;
+`;
 
 export const EditModalBtnWrapper = styled.div`
   border-color: ${colors.primary.white100};

@@ -17,13 +17,13 @@ export function Item(props) {
   const [openEditModal, setOpenEditModal] = useState(false);
 
   const {
+    id,
     img,
     productName,
     category,
     price,
     href,
     description
-
   } = props;
 
   return(
@@ -45,7 +45,8 @@ export function Item(props) {
       
       {
         openDeleteModel && 
-        <DeleteModal 
+        <DeleteModal
+          id={id}
           img={img}
           productName={productName}
           price={price}
@@ -56,6 +57,7 @@ export function Item(props) {
       {
         openEditModal && 
         <EditModal 
+          id={id}
           img={img}
           productName={productName}
           price={price}
