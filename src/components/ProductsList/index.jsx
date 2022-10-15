@@ -1,27 +1,25 @@
-import { getProducts } from '../../datas';
 import { ProductItem } from '../ProductItem';
 
 import {
-  ProjectListContainer,
+  ProductListContainer,
 } from './style';
 
-export function ProductList({category}) {
-  const allProducts = getProducts();
+export function ProductList({category, productsList}) {
+  const allProducts = productsList;
   const categoryList = allProducts.filter(item => item.category === `${category}`);
 
   return (
-    <ProjectListContainer>
+    <ProductListContainer>
       {categoryList.map(item => (
-        <ProductItem 
-          key={item.id}
-          id={item.id}
+        <ProductItem
+          key={item._id}
+          id={item._id}
           item={item.category}
-          imgSrc={item.imgSrc} 
-          title={item.title} 
-          price={item.price} 
+          imgSrc={item.imgSrc}
+          title={item.title}
+          price={item.price}
         />
-      ))} 
-    </ProjectListContainer>
+      ))}
+    </ProductListContainer>
   );
-
 }

@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const ProjectListContainer = styled.ul`
+export const ProductListContainer = styled.ul`
   margin-top: 1.6rem;
   
   display: flex;
