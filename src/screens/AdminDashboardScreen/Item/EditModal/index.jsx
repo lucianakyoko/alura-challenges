@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { Button } from "../../../../components/Button";
 import { MessageModalUI } from "../../../../components/UI/MessageModalUI";
 import { ModalUI } from "../../../../components/UI/ModalUI";
+import { Loader } from '../../../../components/Loader';
 
 import {
   EditModalContainer,
@@ -26,6 +27,7 @@ export function EditModal(props) {
   } = props;
 
   const [successEdit, setSuccessEdit] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [errEdit, setErrEdit] = useState(false);
   const [editUrl, setEditUrl] = useState(img);
   const [editCategory, setEditCategory] = useState(category);
@@ -38,6 +40,7 @@ export function EditModal(props) {
       setErrEdit(true);
 
     } else {
+      setLoading(true);
       await fetch(`/api/produtos/${id}`, {
         method: 'Put',
         headers: {
@@ -52,7 +55,8 @@ export function EditModal(props) {
         })
       });
 
-      setSuccessEdit(true)
+      setLoading(false);
+      setSuccessEdit(true);
       router.push('/dashboard');
     }
   }
@@ -155,23 +159,23 @@ export function EditModal(props) {
       </EditModalContainer>
 
       {
-        successEdit && 
-        <MessageModalUI 
-          color='success'
-          title='Sucesso!'
-          message='Produto editado com sucesso!'
-        >
-          <Button 
-            showBtn
-            btnStyle='primary'
-            width='100%'
-            title='Ok'
-            onClickFunction={() => {
-              setSuccessEdit(false);
-              setOpenEditModal(false);
-            }}
-          />
-        </MessageModalUI>
+        successEdit &&
+          <MessageModalUI 
+            color='success'
+            title='Sucesso!'
+            message='Produto editado com sucesso!'
+          >
+            <Button 
+              showBtn
+              btnStyle='primary'
+              width='100%'
+              title='Ok'
+              onClickFunction={() => {
+                setSuccessEdit(false);
+                setOpenEditModal(false);
+              }}
+            />
+          </MessageModalUI>
       }
 
       {
@@ -189,6 +193,8 @@ export function EditModal(props) {
           />
         </MessageModalUI>
       }
+
+      {loading && <Loader />}
     </ModalUI>
   )
 }

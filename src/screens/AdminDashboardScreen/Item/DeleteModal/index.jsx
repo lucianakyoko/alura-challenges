@@ -1,6 +1,8 @@
-import { Button } from '../../../../components/Button';
-import { ModalUI } from '../../../../components/UI/ModalUI';
+import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { Button } from '../../../../components/Button';
+import { MessageModalUI } from '../../../../components/UI/MessageModalUI';
+import { ModalUI } from '../../../../components/UI/ModalUI';
 
 import {
   DeleteModalInnerContainer,
@@ -10,13 +12,13 @@ import {
   DeleteModalBtnWrapper,
   DeleteModalErrorMessage
 } from './style';
-import { useState } from 'react';
-import { MessageModalUI } from '../../../../components/UI/MessageModalUI';
+import { Loader } from '../../../../components/Loader';
 
 export function DeleteModal(props) {
   const router = useRouter();
   const [message, setMessage] = useState('');
-  const [deleteSuccessMsg, setDeleteSuccessMsg] = useState(false);
+  const [deleteSuccess, setDeleteSuccess] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const {
     id,    
@@ -27,6 +29,8 @@ export function DeleteModal(props) {
   } = props;
 
   const handleDelete = async () => {
+    setLoading(true)
+    
     try {
       await fetch(`/api/produtos/${id}`, {
         method: 'Delete',
@@ -35,6 +39,9 @@ export function DeleteModal(props) {
     } catch (error) {
       setMessage('Não foi possível deletar o produto')
     }
+
+    setLoading(false);
+    setDeleteSuccess(true);
     router.push('/dashboard');
   }
   return(
@@ -68,6 +75,28 @@ export function DeleteModal(props) {
           />
         </DeleteModalBtnWrapper>
       </DeleteModalInnerContainer>
+
+      {
+        deleteSuccess && 
+          <MessageModalUI 
+            color='success'
+            title='Sucesso!'
+            message='Produto excluido com sucesso!'
+          >
+            <Button 
+              showBtn
+              btnStyle='primary'
+              width='100%'
+              title='Ok'
+              onClickFunction={() => {
+                setDeleteSuccess(false);
+                setOpenDeleteModel(false);
+              }}
+            />
+          </MessageModalUI>
+      }
+
+      { loading && <Loader />}
     </ModalUI>
   )
 }

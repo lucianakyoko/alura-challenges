@@ -32,7 +32,7 @@ export function PrimaryFooter() {
           <FormContent>
             <div>
               <label htmlFor="name">Nome</label>
-              <input type="text" name="name" id="name" placeholder='André Lisboa'/>
+              <input type="text" name="name" id="name" placeholder='Digite seu nome'/>
             </div>
 
             <div>

@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Button } from "../../components/Button";
 import { Footer } from "../../components/Footer";
 import { Header } from "../../components/Header";
+import { Loader } from '../../components/Loader';
 
 import {
   RegisterNewProductContainer,
@@ -17,6 +18,7 @@ import {
 
 export function RegisterNewProductScreen() {
   const [postErrMsg, setPostErrMsg] = useState(false);
+  const [loading, setLoading] = useState(false);
   const [postMessage, setPostMessage] = useState(false);
   const [url, setUrl] = useState('');
   const [category, setCategory] = useState('');
@@ -30,6 +32,7 @@ export function RegisterNewProductScreen() {
     if(!url || !category || !price || !product || !description){
       setPostErrMsg(true);
     } else {
+      setLoading(true);
       await fetch('/api/produtos', {
         body: JSON.stringify({
           imgSrc: url,
@@ -44,6 +47,7 @@ export function RegisterNewProductScreen() {
         method: 'POST',
       });
       
+      setLoading(false);
       setPostMessage(true);
       setUrl('');
       setCategory('');
@@ -175,7 +179,8 @@ export function RegisterNewProductScreen() {
           />
         </span>
       </RegisterNewProductContentWrapper>
-
+      
+      { loading && <Loader />}
       <Footer />
     </RegisterNewProductContainer>
   );
