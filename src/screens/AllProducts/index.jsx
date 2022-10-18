@@ -18,7 +18,10 @@ export function AllProducts({products}) {
 
   return (
     <>
-      <Header />
+      <Header
+        showSearchBar
+        productsList={products}
+      />
 
       <AllProductsContainer>
         <ProductsSectionUI

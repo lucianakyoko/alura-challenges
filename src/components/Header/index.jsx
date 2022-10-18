@@ -1,4 +1,5 @@
 import Nextlink from 'next/link';
+import { useState } from 'react';
 
 import { Button } from "../Button";
 import { Logo } from "../Logo";
@@ -10,7 +11,16 @@ import {
   BtnAndSearchBarWrapper
 } from './style';
 
-export function Header({btnTitle, btnStyle, btnShow, btnHref, padding}) {
+export function Header(props) {
+  const {
+    productsList, 
+    btnTitle, 
+    btnStyle, 
+    btnShow, 
+    btnHref, 
+    padding, 
+    showSearchBar} = props;
+
   return (
     <HeaderContainer>
       <HeaderContentWrapper>
@@ -26,7 +36,10 @@ export function Header({btnTitle, btnStyle, btnShow, btnHref, padding}) {
             showBtn={btnShow}
             padding={padding}
           /> 
-          <SearchBar />
+          <SearchBar 
+            showSearchBar={showSearchBar}
+            productsList={productsList}
+          />
         </BtnAndSearchBarWrapper>
       </HeaderContentWrapper>
     </HeaderContainer>

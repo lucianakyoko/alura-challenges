@@ -13,7 +13,10 @@ import {
 export function ProductItemScreen({product, products}) {
   return(
     <ProductItemScreenContainer>
-      <Header />
+      <Header
+        showSearchBar 
+        productsList={products}
+      />
       <ProductItemScreenContentBox>
         <ProductItemContentWrapper>
           <ProductImageBox img={product.imgSrc}></ProductImageBox>

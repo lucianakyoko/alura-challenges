@@ -6,8 +6,8 @@ export function ProductSection({title, productsList, showLast6products, setShowL
   return (
     <ProductsSectionUI title={title} showMoreBtn>
       <ProductList 
-        showLast6products={showLast6products}
-        setShowLast6Products={setShowLast6Products(true)}
+        // showLast6products={showLast6products}
+        // setShowLast6Products={setShowLast6Products(true)}
         category={title} 
         productsList={productsList}
         last4products

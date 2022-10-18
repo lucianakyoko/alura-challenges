@@ -9,9 +9,13 @@ import {
 } from './style';
 
 export function LoginScreen() {
+
   return(
     <LoginScreenContainer>
-      <Header btnShow={false} />
+      <Header 
+        btnShow={false} 
+        showSearchBar={false}
+      />
 
       <LoginFormWrapper>
         <h3>Iniciar Sessão</h3>

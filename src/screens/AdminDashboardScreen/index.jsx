@@ -13,7 +13,10 @@ export function AdminDashboardScreen({products}) {
 
   return(
     <AdminDashboardScreenContainer>
-      <Header />
+      <Header 
+        showSearchBar
+        productsList={products}
+      />
 
       <AdminDashboardContentWrapper>
         <AdminDashboardTitleAndBtnWrapper>

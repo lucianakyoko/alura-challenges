@@ -14,6 +14,7 @@ export function HomeScreen({products}) {
   const categoryList = products.map(item => item.category);
   const productsSections = [...new Set(categoryList)];
   
+
   return(
     <HomeScreenContainer>
       <Header 
@@ -21,7 +22,9 @@ export function HomeScreen({products}) {
         btnTitle='Login' 
         btnStyle='secondary' 
         padding='1.2rem 4.75rem'
-        btnShow={true} 
+        btnShow={true}
+        showSearchBar
+        productsList={products}
       />
 
       <HeroSection />
