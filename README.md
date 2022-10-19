@@ -88,7 +88,7 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 
 --- 
 
-## 📝 Indo além
+## 🚩 Indo alem
 
 Para além do proposto pelo desafio, realizei as seguintes implementações:
 
