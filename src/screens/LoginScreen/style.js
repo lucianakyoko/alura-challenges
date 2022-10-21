@@ -77,3 +77,10 @@ export const LoginInput = styled.input`
     width: 42.3rem;
   }
 `;
+
+export const ErrMessage = styled.p`
+  color: ${colors.secondary.red50};
+  font-size: 1.4rem;
+  font-weight: 600;
+  text-align: left;
+`;
