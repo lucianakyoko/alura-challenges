@@ -1,13 +1,14 @@
+import { SessionProvider } from "next-auth/react";
 import Product from '../models/Product';
 import { GlobalStyles } from '../styles/GlobalStyles';
 import dbConnect from '../utils/dbConnect';
 
 function MyApp({ Component, pageProps }) {
   return (
-    <>
+    <SessionProvider session={pageProps.session}>
       <GlobalStyles />
       <Component {...pageProps} />
-    </>
+    </SessionProvider>
   );
 }
 
