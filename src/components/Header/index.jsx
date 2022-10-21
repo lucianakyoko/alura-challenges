@@ -19,7 +19,9 @@ export function Header(props) {
     btnShow, 
     btnHref, 
     padding, 
-    showSearchBar} = props;
+    onClickFunction,
+    showSearchBar
+  } = props;
 
   return (
     <HeaderContainer>
@@ -35,6 +37,7 @@ export function Header(props) {
             btnStyle={btnStyle} 
             showBtn={btnShow}
             padding={padding}
+            onClickFunction={onClickFunction}
           /> 
           <SearchBar 
             showSearchBar={showSearchBar}
