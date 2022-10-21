@@ -1,4 +1,5 @@
 import { Header } from "../../components/Header";
+import { signIn} from 'next-auth/react';
 import { HeroSection } from "./HeroSection";
 import { ProductSection } from './ProductSection';
 import { Footer } from "../../components/Footer";
@@ -13,12 +14,11 @@ export function HomeScreen({products}) {
   const[showLast6products, setShowLast6Products] = useState(false);
   const categoryList = products.map(item => item.category);
   const productsSections = [...new Set(categoryList)];
-  
 
   return(
     <HomeScreenContainer>
       <Header 
-        btnHref='/login' 
+        onClickFunction = {() => signIn()}
         btnTitle='Login' 
         btnStyle='secondary' 
         padding='1.2rem 4.75rem'
