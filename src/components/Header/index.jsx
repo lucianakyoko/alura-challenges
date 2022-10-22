@@ -1,14 +1,16 @@
 import Nextlink from 'next/link';
-import { useState } from 'react';
+
 
 import { Button } from "../Button";
 import { Logo } from "../Logo";
+import { MailIcon } from '../icons/MailIcon'
 import { SearchBar } from "../SearchBar";
 import {
   HeaderContainer,
   HeaderContentWrapper,
   LogoWrapper,
-  BtnAndSearchBarWrapper
+  BtnAndSearchBarWrapper,
+  MailNotificationWrapper
 } from './style';
 
 export function Header(props) {
@@ -20,7 +22,9 @@ export function Header(props) {
     btnHref, 
     padding, 
     onClickFunction,
-    showSearchBar
+    showSearchBar,
+    showNotitication,
+    notificationNumber
   } = props;
 
   return (
@@ -29,6 +33,17 @@ export function Header(props) {
         <LogoWrapper>
           <Logo />
         </LogoWrapper>
+
+        <MailNotificationWrapper className={!showNotitication ? 'dont-show-notification' : ''}>
+          <Nextlink href='/dashboard/mensagens'>
+            <a>
+              <MailIcon />
+              {notificationNumber > 0 &&
+                <span>{notificationNumber}</span>
+              }
+            </a>
+          </Nextlink>
+        </MailNotificationWrapper>
 
         <BtnAndSearchBarWrapper className={!btnShow ? 'dont-show-btn' : ''}>
           <Button 
@@ -39,6 +54,7 @@ export function Header(props) {
             padding={padding}
             onClickFunction={onClickFunction}
           /> 
+          
           <SearchBar 
             showSearchBar={showSearchBar}
             productsList={productsList}

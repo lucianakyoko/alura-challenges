@@ -39,5 +39,11 @@ export const MessagesListWrapper = styled.ul`
   display: flex;
   flex-direction: column;
 
-   border-radius: .4rem;
+  border-radius: .4rem;
+`;
+
+export const NoMessagesText = styled.p`
+  margin-top: 1.8rem;
+  color: ${colors.secondary.orange80};
+  font-size: 1.6rem;
 `;

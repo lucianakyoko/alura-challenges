@@ -146,3 +146,10 @@ export const FormContent = styled.form`
     }
   }
 `;
+
+export const ErrMessageWrapper = styled.div`
+  padding: .8rem 0;
+  color: ${colors.secondary.red50};
+  font-size: 1.4rem;
+  font-weight: 600;
+`;

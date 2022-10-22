@@ -1,10 +1,14 @@
 import dbConnect from "../../utils/dbConnect";
 import Product from '../../models/Product';
 
+import dbMessageConnect from "../../utils/dbMessageConnect";
+import Message from '../../models/Message';
+
 import { AdminDashboardScreen } from "../../screens/AdminDashboardScreen";
 
 export async function getServerSideProps() {
-  await dbConnect()
+  await dbConnect();
+  await dbMessageConnect();
 
   const result = await Product.find();
   const products = result.map((doc) => {
@@ -14,7 +18,15 @@ export async function getServerSideProps() {
     return product;
   })
 
-  return { props: {products} }
+  const resultMsg = await Message.find();
+  const messages = resultMsg.map((doc) => {
+    const message = doc.toObject();
+    message._id = message._id.toString();
+
+    return message;
+  })
+
+  return { props: {products, messages} }
 }
 
 

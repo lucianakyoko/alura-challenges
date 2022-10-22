@@ -21,6 +21,8 @@ export const HeaderContentWrapper = styled.div`
   align-items: center;
   justify-content: space-between;
 
+  position: relative;
+
   @media screen and (min-width: 1137px) {
     max-width: 113.6rem;
     margin: auto;
@@ -29,6 +31,39 @@ export const HeaderContentWrapper = styled.div`
 
 export const LogoWrapper = styled.span`
   flex: 1;
+`;
+
+export const MailNotificationWrapper = styled.div`
+  display: flex;
+  margin-right: 2.4rem;
+  position: relative;
+
+  &.dont-show-notification {
+    display: none;
+  }
+
+  span {
+    padding: .04rem .4rem;
+    color: ${colors.primary.white100};
+    font-size: 1.4rem;
+    font-weight: 600;
+
+    position: absolute;
+    bottom: -.6rem;
+    right: -1rem;
+
+    border-radius: .4rem;
+    background-color: ${colors.secondary.red50};
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  @media screen and (min-width: 767px) {
+    position: absolute;
+    right: 0;
+  }
 `;
 
 export const BtnAndSearchBarWrapper = styled.div`

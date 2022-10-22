@@ -15,10 +15,12 @@ import {
   AdminDashboardTitleAndBtnWrapper,
 }  from './style';
 
-export function AdminDashboardScreen({products}) {
+export function AdminDashboardScreen({products, messages}) {
   const router = useRouter();
   const [toastIsOpen, setToastIsOpen] = useState(true);
   const { status } = useSession();
+  const allMessages = messages.filter(message => message.read === false);
+  const notifications = allMessages.length;
 
   useEffect(() => {
     if (status === "unauthenticated") {
@@ -36,8 +38,10 @@ export function AdminDashboardScreen({products}) {
         <Header 
           showSearchBar
           productsList={products}
+          showNotitication
+          notificationNumber={notifications}
         />
-  
+ 
         <AdminDashboardContentWrapper>
           <AdminDashboardTitleAndBtnWrapper>
             <h3>Todos os produtos</h3>
