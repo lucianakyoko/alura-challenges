@@ -1,6 +1,6 @@
 import { SessionProvider } from "next-auth/react";
-import Product from '../models/Product';
 import { GlobalStyles } from '../styles/GlobalStyles';
+import Product from '../models/Product';
 import dbConnect from '../utils/dbConnect';
 
 function MyApp({ Component, pageProps }) {
@@ -13,8 +13,8 @@ function MyApp({ Component, pageProps }) {
 }
 
 export async function getServerSideProps() {
-  await dbConnect()
-
+  await dbConnect();
+  
   const result = await Product.find();
   const products = result.map((doc) => {
     const product = doc.toObject();
@@ -23,7 +23,11 @@ export async function getServerSideProps() {
     return product;
   })
 
-  return { props: {products} }
+  return { 
+    props: {
+      products, 
+    } 
+  }
 }
 
 export default MyApp;
