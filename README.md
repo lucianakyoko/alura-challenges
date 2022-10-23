@@ -79,7 +79,7 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 | 01 | Criando minha loja: interface cliente | [link](https://trello.com/b/YahtquUC/challenge-front-end-semana-1) | ✔️ |
 | 02 | Avançando no projeto: produtos e login | [link](https://trello.com/b/DelwGaI3/challenge-front-end-semana-2) | ✔️ |
 | 03 | Gerenciando meus produtos: interface administrador/ Login | [link](https://trello.com/b/QDO2UzyY/challenge-front-end-semanas-3-e-4) | ✔️ |
-| 04 | Fale conosco: envio de mensagem | [link](https://trello.com/b/QDO2UzyY/challenge-front-end-semanas-3-e-4) | 🔵 |
+| 04 | Fale conosco: envio de mensagem | [link](https://trello.com/b/QDO2UzyY/challenge-front-end-semanas-3-e-4) | ✔️ |
 
 --- 
 
@@ -92,11 +92,17 @@ Para além do proposto pelo desafio, realizei as seguintes implementações:
  - ao clicar no ícone de edição, aparecerá um popup com os dados do produto a ser editado. O usuário poderá cancelar a ação, ou realizar a alteração que desejar e salvar no banco de dados.
  - ao clicar no ícone de lixeira, aparecerá um popup com imagem, nome e preço do produto. O usuário poderá cancelar a ação, ou confirmar a exclusão do produto no banco de dados.
  - para ambas as ações acima, é mostrado um loader indicando que a ação está sendo processada.
+ - No Header da "Página do administrador", contém o número de mensagens não lidas. Ao clicar, é redirecionado para a página de mensagens.
 
  **Adicionar novo produto:**
   - O usuário poderá adicionar um produto com numa nova categoria. Esta categoria aparecerá na página Home  e terá um link próprio para "ver tudo", onde será direcionado para a página onde mostrará todos os produtos pertencente à categoria.
   - Uma pequena validação é feita no envio do formulário. Um popup com a mensagem de erro aparecerá caso o usuário não preencha todos os campos;
   - Ao preencher o formulário e clicar em "Adicionar produto", um loader aparecerá indicando que o produto está sendo adicionado.
+
+ **Mensagens:**
+  - Esta página recebe todas as mensagens recebidas pelo formulario "Fale Conosco", disponivel nos rodapes das páginas.
+  - Ao clicar na mensagem, será exibido um popup com a mensagem completa. Nele, o usuário poderá marcar como lida ou deletar a mensagem. 
+  - Para mensagens já visualizadas, o usuário poderá marcar como não lida.
 
 --- 
 
