@@ -1,14 +1,14 @@
 import dbConnect from "../../utils/dbConnect";
 import Product from '../../models/Product';
 
-import dbMessageConnect from "../../utils/dbMessageConnect";
+// import dbMessageConnect from "../../utils/dbMessageConnect";
 import Message from '../../models/Message';
 
 import { AdminDashboardScreen } from "../../screens/AdminDashboardScreen";
 
 export async function getServerSideProps() {
   await dbConnect();
-  await dbMessageConnect();
+  // await dbMessageConnect();
 
   const result = await Product.find();
   const products = result.map((doc) => {

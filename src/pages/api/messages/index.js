@@ -1,10 +1,10 @@
-import dbMessageConnect from '../../../utils/dbMessageConnect';
+import dbConnect from '../../../utils/dbConnect';
 import Message from '../../../models/Message';
 
 export default async function handler(req, res) {
   const { method } = req;
 
-  await dbMessageConnect()
+  await dbConnect()
 
   switch (method) {
     case 'GET':

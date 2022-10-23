@@ -1,5 +1,9 @@
+import { useState } from 'react';
+
 import { Logo } from '../../Logo';
 import { Button } from '../../Button';
+import { Loader } from '../../Loader';
+import { SuccessMessageModal } from './SuccessMessageModal';
 
 import {
   PrimaryFooterContainer,
@@ -9,9 +13,6 @@ import {
   FormContent,
   ErrMessageWrapper,
 } from './style';
-import { useState } from 'react';
-import { Loader } from '../../Loader';
-import { SuccessMessageModal } from './SuccessMessageModal';
 
 export function PrimaryFooter() {
   const [email, setEmail] = useState('');
