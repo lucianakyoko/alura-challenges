@@ -24,4 +24,4 @@ Somos desafiados a desenvolver uma aplicação em um período de quatro semanas.
 | Edição | Tipo do projeto | Nome do Projeto | Link | Status | Preview
 | --- | --- | --- | --- | --- | --- |
 | 5 | E-Commerce | [Alura Geek](./alura-geek/) | [Link](https://alura-geek-challenge.vercel.app/) | ✔️ | <img align="center" alt="Miniatura da imagem do projeto" height="100" width="100" src=".github/AluraGeek.jpg"> |
-| 6 | Site Divulgação | CodeChella | --- | 🔵 | --- |
+| 6 | Site Divulgação | [CodeChella](./codechella/) | --- | 🔵 | --- |
