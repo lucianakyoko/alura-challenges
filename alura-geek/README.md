@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="./.github/Logo.png" alt="Logo Alura Geek" >
+  <img src="../.github/logo-alura-geek.png" alt="Logo Alura Geek" >
 </p>
 
 ---
@@ -108,5 +108,5 @@ Para além do proposto pelo desafio, realizei as seguintes implementações:
 
 ## 🎮 Preview
 <p align="center">
-  <img src="./.github/AluraGeek.jpg" alt="Preview da página AluraGeek" width="80%"/>
+  <img src="../.github/AluraGeek.jpg" alt="Preview da página AluraGeek" width="80%"/>
 </p>
