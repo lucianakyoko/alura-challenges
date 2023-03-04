@@ -3,14 +3,14 @@ import {
   Image
 } from './style';
 
-export function ExperienceItem({image}) {
+export function ExperienceItem({xp}) {
   return (
     <XpItem>
-      <Image image={image}></Image>
+      <Image image={`/experience/experience${xp.image}.png`}></Image>
       <div className='title-text'>
-        <h3 className='title'>Acessibilidade e Inclusão</h3>
+        <h3 className='title'>{xp.label}</h3>
         <p className='text'>
-          Nosso evento tenta abraçar um público mais amplo em todos os sentidos, de todas as idades, corpos, gostos e pensamentos!  Isso está presente no  espaço físico, na sinalização, no treinamento da equipe de apoio, na comunicação em libras, braile, visual e tátil. Além disso, dispomos de ingressos gratuitos para pessoas com deficiência e acompanhantes, pessoas idosas e crianças!
+          {xp.text}
         </p>
       </div>
     </XpItem>

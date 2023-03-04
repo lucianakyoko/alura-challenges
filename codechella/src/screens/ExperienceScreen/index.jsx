@@ -1,4 +1,5 @@
 import { PageLayout } from "@/components/PageLayout";
+import { getExperiences } from "@/datas/experiences";
 import { ExperienceItem } from "./ExperienceItem";
 
 import {
@@ -6,17 +7,18 @@ import {
 } from './style';
 
 export function ExperienceScreen(){
+  const experiences = getExperiences();
+
   return (
     <PageLayout
       pageTitle='A experiência | Codechella'
       heroText='A Experiência'
       page='experience'
     >
-
       <Experiences>
-        <ExperienceItem image='/experience/experience1.png' />
-        <ExperienceItem image='/experience/experience2.png'/>
-        <ExperienceItem image='/experience/experience3.png'/>
+        {experiences.map(xp => (
+          <ExperienceItem xp={xp} />
+        ))}
       </Experiences>
     </PageLayout>
   );
