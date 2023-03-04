@@ -47,7 +47,7 @@ export const Navbar = styled.nav`
         font-size: 2rem;
         font-weight: 700;
         &:hover {
-          color: ${colors.boreal.tertiary100};
+          text-decoration: underline;
         }
       }
     }

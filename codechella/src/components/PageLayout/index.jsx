@@ -2,7 +2,6 @@ import Head from "next/head";
 import { Calistoga } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Banner } from "../Banner/";
-// import { PageHero } from "@/components/PageHero/index.jsx";
 import { Footer } from "@/components/Footer";
 
 import {
@@ -15,7 +14,6 @@ export const calistogaFont = Calistoga({
 });
 
 export function PageLayout({pageTitle, heroText, page, children}) {
-
   return (
     <>
       <Head>
