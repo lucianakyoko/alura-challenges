@@ -17,7 +17,7 @@ export const BannerBackground = styled.div`
     height: 38.4rem;
   }
 
-  ${device.laptopL} {
+  ${device.laptop} {
     height: 40.7rem;
   }
 `;
@@ -35,20 +35,10 @@ export const BannerContent = styled.div`
     font-size: 3.2rem;
     line-height: 4rem;
     text-align: center;
-  }
 
-  ${device.tablet} {
-    .banner-text {
+    ${device.tablet} {
       font-size: 6.4rem;
       line-height: 8.4rem;
-    }
-  }
-
-  ${device.laptopL} {
-    .banner-text {
-      overflow: hidden; 
-      padding: 12rem 44rem;
-      text-align: center;
     }
   }
 `;

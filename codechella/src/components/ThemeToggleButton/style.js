@@ -27,9 +27,6 @@ export const ToggleButton = styled.div`
     top: 24rem;
     right: 4rem;
   }
-  ${device.laptop} {
-    top: 16rem;
-  }
 
   .theme-color {
     width: 2.4rem;

@@ -12,7 +12,7 @@ export const CTASection = styled.section`
     padding: 3.2rem 6rem;
   }
 
-  ${device.laptopL} {
+  ${device.laptop} {
     padding: 6.4rem 12rem;
     flex-direction: row;
     gap: 4.8rem;
@@ -29,7 +29,7 @@ export const CTASection = styled.section`
     border-radius: 1.6rem;
 
     ${device.tablet} {
-      width: 90%;
+      width: 100%;
       margin: auto;
     }
   }
@@ -39,6 +39,9 @@ export const CTASection = styled.section`
     flex-direction: column;
     align-items: center;
     gap: 2.4rem;
+    ${device.tablet} {
+      width: 100%;
+    }
 
     .content_title {
       display: flex;
