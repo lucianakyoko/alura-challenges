@@ -54,7 +54,7 @@ export const XpItem = styled.li`
 export const Image = styled.div`
   width: 100%;
   height: 40rem;
-  background-color: yellowgreen;
+
   border-radius: 1.6rem;
   background-image: url(${props => props.image});
   background-position: center;

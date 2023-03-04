@@ -1,4 +1,5 @@
 import { calistogaFont, PageLayout } from '@/components/PageLayout';
+import { ScrollToTopButton } from '@/components/ScrollToTopButton';
 import { getBandsList } from '@/datas/bands';
 import { CTA } from './CTA';
 import { LineUp } from './LineUp';
@@ -29,6 +30,7 @@ export function HomeScreen() {
       </LineUpSection>
 
       <DecorationImg></DecorationImg>
+      <ScrollToTopButton />
     </PageLayout>
   );
 }

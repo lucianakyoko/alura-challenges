@@ -1,4 +1,5 @@
 import { PageLayout } from "@/components/PageLayout";
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { getMapList } from "@/datas/sectionMap";
 import { DetailItem } from "./DetailItem";
 import { Map } from "./Map";
@@ -27,6 +28,7 @@ export function SectionMapScreen() {
           ))}
         </ul>
       </Details>
+      <ScrollToTopButton />
     </PageLayout>
   );
 }

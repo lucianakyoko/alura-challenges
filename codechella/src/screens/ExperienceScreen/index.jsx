@@ -1,4 +1,5 @@
 import { PageLayout } from "@/components/PageLayout";
+import { ScrollToTopButton } from "@/components/ScrollToTopButton";
 import { getExperiences } from "@/datas/experiences";
 import { ExperienceItem } from "./ExperienceItem";
 
@@ -20,6 +21,7 @@ export function ExperienceScreen(){
           <ExperienceItem key={xp.label} xp={xp} />
         ))}
       </Experiences>
+      <ScrollToTopButton />
     </PageLayout>
   );
 }
