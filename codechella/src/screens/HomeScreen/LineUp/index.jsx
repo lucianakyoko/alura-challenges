@@ -16,7 +16,7 @@ export function LineUp({bands, week, day}) {
     return (
       <ul className="group_bands">
         {bands.map(band => (
-          <li className={`levels band_level${band.level}`}>{band.band}</li>
+          <li key={band.band} className={`levels band_level${band.level}`}>{band.band}</li>
         ))}
       </ul>
     );
