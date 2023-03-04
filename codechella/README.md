@@ -5,7 +5,7 @@
 ---
 
 <p align="center">
-  <!-- <a href="https://alura-geek-challenge.vercel.app/">Link</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; -->
+  <a href="https://codechella-two.vercel.app/">Link</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sobre">Sobre</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-challenge">Challenge</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
@@ -25,11 +25,11 @@ Com a intenção de divulgar o evento e vender ingressos, o festival deseja impl
 ## 🚀 Challenge 
 A página do **CodeChellas** deve seguir os seguintes requisitos:
 
-| ✔️ | Requisitos: |
+| check | Requisitos: |
 | - | - |
-| - | Uma página inicial que mostrará as atrações do festival |
-| - | Uma página para explicar a experiência do festival, mostrando os diversos palcos |
-| - | Uma página para demonstrar os setores disponíveis para compra de ingresso |
+| ✔️ | Uma página inicial que mostrará as atrações do festival |
+| ✔️ | Uma página para explicar a experiência do festival, mostrando os diversos palcos |
+| ✔️ | Uma página para demonstrar os setores disponíveis para compra de ingresso |
 | - | Uma página de perguntas frequentes |
 | - | Uma página para compra de ingressos através do preenchimento do formulário |
 | - | Uma página para mostrar o ingresso gerado |
@@ -60,7 +60,7 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 
 | Semana | Sprint | Trello |Status |
 | --- | --- | --- | --- |
-| 1 | Conheça o CodeChella | [Backlogs - Semana 01](https://trello.com/b/wakg1ft4/codechella-semana-1) | 🔵 |
+| 1 | Conheça o CodeChella | [Backlogs - Semana 01](https://trello.com/b/wakg1ft4/codechella-semana-1) | ✔️ |
 | 2 | - | - | ⚫ |
 | 3 | - | - | ⚫ |
 | 4 | - | - | ⚫ |

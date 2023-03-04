@@ -23,7 +23,7 @@ export function SectionMapScreen() {
         
         <ul className="details_list">
           {details.map(detail => (
-            <DetailItem detail={detail} />
+            <DetailItem key={detail.label} detail={detail} />
           ))}
         </ul>
       </Details>

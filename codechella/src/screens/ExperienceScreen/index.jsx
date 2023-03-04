@@ -17,7 +17,7 @@ export function ExperienceScreen(){
     >
       <Experiences>
         {experiences.map(xp => (
-          <ExperienceItem xp={xp} />
+          <ExperienceItem key={xp.label} xp={xp} />
         ))}
       </Experiences>
     </PageLayout>
