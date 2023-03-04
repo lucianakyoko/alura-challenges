@@ -8,7 +8,7 @@ import {
 export function CTA() {
   return (
     <CTASection>
-      <div className="cta_image">imagem</div>
+      <div className="cta_image"></div>
       <div className="cta_content">
         <h2 className="content_title">
           <span>&#10094; 11 e 12 de Março &#10095;</span>
