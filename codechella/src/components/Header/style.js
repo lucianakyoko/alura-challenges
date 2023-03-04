@@ -25,7 +25,7 @@ export const HeaderContainer = styled.header`
     }
   }
 
-  ${device.laptopL} {
+  ${device.laptop} {
     padding: 3.2rem 12rem;
     flex-direction: row;
     justify-content: space-between;

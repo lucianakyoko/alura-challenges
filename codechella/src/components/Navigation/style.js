@@ -76,7 +76,7 @@ export const Navbar = styled.nav`
     }
   }
 
-  ${device.laptopL} {
+  ${device.laptop} {
     .nav-list {
       justify-content: flex-end;
       gap: 3.2rem;

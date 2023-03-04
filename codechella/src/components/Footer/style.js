@@ -51,7 +51,7 @@ export const FooterContainer = styled.footer`
     }
   }
 
-  ${device.laptopL} {
+  ${device.laptop} {
     padding: 5rem 12rem;
 
     flex-direction: row;
