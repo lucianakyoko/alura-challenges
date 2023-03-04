@@ -43,11 +43,11 @@ export const Navbar = styled.nav`
         }
       }
       .nav-link {
-        color: ${props => props.theme.text};
+        color: ${colors.white};
         font-size: 2rem;
         font-weight: 700;
         &:hover {
-          color: ${props => props.theme.textHover};
+          color: ${colors.boreal.tertiary100};
         }
       }
     }

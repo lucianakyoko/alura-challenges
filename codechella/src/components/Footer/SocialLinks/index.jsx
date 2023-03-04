@@ -8,7 +8,7 @@ import {
 export function SocialLinks() {
   const socialLinks = getSocialLinks();
   const theme = useTheme();
-  console.log(theme.socialIcons['instagram'])
+
   const getIcon = (linkId) => {
     const icon = theme.socialIcons[linkId];
     return icon;

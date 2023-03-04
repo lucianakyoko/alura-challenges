@@ -10,7 +10,7 @@ export const GlobalStyles = createGlobalStyle`
     font-size: 62.5%;
   }
   body {
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Raleway', sans-serif;
   }
   ul {
     list-style: none;

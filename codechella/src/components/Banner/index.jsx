@@ -10,7 +10,7 @@ import {
 export function Banner({heroText, page}) {
   const theme = useTheme();
   const isHome = page === 'home';
-  const themeBanner = theme.banner[`${page}`];
+  const themeBanner = theme.images.banner;
 
   const banners = getBanners();
   const pageBanner = banners.filter(item => item.page === page);
