@@ -1,3 +1,4 @@
+import { colors } from "@/styles/colors";
 import styled from "styled-components";
 
 export const Button = styled.span`
@@ -9,7 +10,7 @@ export const Button = styled.span`
   justify-content: center;
 
   background-color: ${props => props.theme.button};
-  box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.25);
+  box-shadow: ${colors.boxShadow};
   border-radius: 50%;
 
   position: fixed;

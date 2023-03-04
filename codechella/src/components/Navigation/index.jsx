@@ -1,13 +1,14 @@
 import NextLink from "next/link";
+import { useRouter } from "next/router";
 import { getNavigationItems } from "@/datas/navigation";
 
 import {
   Navbar,
 } from './style';
-import { useRouter } from "next/router";
 
 export function Navigation({ isMenuOpen, handleMenu}) {
   const router = useRouter();
+
   const navItems = getNavigationItems();
 
   return (

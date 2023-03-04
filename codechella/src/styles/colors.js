@@ -1,6 +1,7 @@
 export const colors = {
   white: "#FFFFFF",
   gray: '#444444',
+  boxShadow: "4px 4px 0px #444444",
   boreal: {
     primary100: "#4650BD",
     secondary100: "#008364",

@@ -63,7 +63,7 @@ export const CTASection = styled.section`
       padding:  .8rem 4.4rem;
       background-color: ${props => props.theme.button};
       border-radius: 1.6rem;
-      box-shadow: 4px 4px 0px ${colors.gray};
+      box-shadow: ${colors.boxShadow};
       
       display: flex;
       align-items: center;
