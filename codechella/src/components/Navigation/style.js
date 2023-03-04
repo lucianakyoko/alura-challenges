@@ -5,7 +5,7 @@ import { device } from "@/styles/devices";
 export const Navbar = styled.nav`
   width: 100%;
   height: 100vh;
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   z-index: 1;

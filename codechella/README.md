@@ -10,6 +10,7 @@
   <a href="#-challenge">Challenge</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sprints">Sprints</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#-indo-alem">Indo além</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <!-- <a href="#-preview">Preview</a>  -->
 </p>
 
@@ -64,3 +65,10 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 | 2 | - | - | ⚫ |
 | 3 | - | - | ⚫ |
 | 4 | - | - | ⚫ |
+
+---
+
+## 🚩 Indo alem
+  Neste challenge era possível escolher um tema dentre os dois disponíveis (summer ou boreal). Eu optei por desenvolver com os dois temas e permitir que o usuário realizasse a troca do tema.
+
+  Criação do botão que realiza o "scroll" para o topo da página.
