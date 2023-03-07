@@ -24,6 +24,7 @@ export const borealTheme = () => ({
     twitter: <IoLogoTwitter color={colors.white}/>,
   },
   logo: '/logo-white.png',
+  logoIcon:'/favicon-white.png'
 });
 
 export const summerTheme = () => ({
@@ -49,4 +50,5 @@ export const summerTheme = () => ({
     twitter: <IoLogoTwitter color={colors.gray}/>,
   },
   logo: '/logo-gray.png',
+  logoIcon:'/favicon.png'
 });
