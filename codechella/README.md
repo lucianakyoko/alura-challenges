@@ -31,7 +31,7 @@ A página do **CodeChellas** deve seguir os seguintes requisitos:
 | ✔️ | Uma página inicial que mostrará as atrações do festival |
 | ✔️ | Uma página para explicar a experiência do festival, mostrando os diversos palcos |
 | ✔️ | Uma página para demonstrar os setores disponíveis para compra de ingresso |
-| - | Uma página de perguntas frequentes |
+| ✔️ | Uma página de perguntas frequentes |
 | - | Uma página para compra de ingressos através do preenchimento do formulário |
 | - | Uma página para mostrar o ingresso gerado |
 | - | É muito importante que o site seja responsivo para dar aos clientes a facilidade de comprar através de dispositivos mobiles |
@@ -62,7 +62,7 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 | Semana | Sprint | Trello |Status |
 | --- | --- | --- | --- |
 | 1 | Conheça o CodeChella | [Backlogs - Semana 01](https://trello.com/b/wakg1ft4/codechella-semana-1) | ✔️ |
-| 2 | - | - | ⚫ |
+| 2 | Expandindo o festival | [Backlogs - Semana 02](https://trello.com/b/sNWh1Ggl/codechella-semana-2) | 🔵 |
 | 3 | - | - | ⚫ |
 | 4 | - | - | ⚫ |
 
