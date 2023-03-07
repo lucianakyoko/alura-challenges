@@ -1,4 +1,5 @@
 import { device } from "@/styles/devices";
+import { backgroundImage } from "@/styles/mixin";
 import styled from "styled-components";
 
 export const XpItem = styled.li`
@@ -57,15 +58,9 @@ export const Image = styled.div`
 
   border-radius: 1.6rem;
   background-image: url(${props => props.image});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  ${backgroundImage('normal', 'cover')}
 
   ${device.tablet} {
     background-position: 50% 22%;
-  }
-
-  ${device.laptop} {
-    
   }
 `;

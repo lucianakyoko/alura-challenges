@@ -1,4 +1,5 @@
 import { device } from '@/styles/devices';
+import { backgroundImage } from '@/styles/mixin';
 import styled from 'styled-components';
 
 export const ConfirmationContainer = styled.div`
@@ -70,10 +71,9 @@ export const TicketWrapper = styled.div`
     .barcode {
       width: 100%;
       height: 19rem;
+
       background-image: url('/qr-code.png');
-      background-position: center;
-      background-size: contain;
-      background-repeat: no-repeat;
+      ${backgroundImage('normal', 'contain')};
       
       ${device.tablet} {
         height: 31rem;

@@ -1,4 +1,5 @@
 import { device } from "@/styles/devices";
+import { backgroundImage } from "@/styles/mixin";
 import styled from "styled-components";
 
 export const LineUpSection = styled.section`
@@ -24,11 +25,10 @@ export const LineUpSection = styled.section`
 export const DecorationImg = styled.div`
   width: 100%;
   height: 31.2rem;
+  
   background-image: url(${props => props.theme.images.lineup});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  mix-blend-mode: multiply;
+  ${backgroundImage('multiply', 'cover')};
+  background-attachment: fixed;
   
   ${device.tablet} {
     height: 33.8rem;

@@ -1,4 +1,5 @@
 import { device } from "@/styles/devices";
+import { backgroundImage } from "@/styles/mixin";
 import styled from "styled-components";
 
 export const Detail = styled.li`
@@ -44,9 +45,7 @@ export const DetailImage = styled.div`
   height: 24rem;
   
   background-image: url(${props => props.image});
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+  ${backgroundImage('normal', 'cover')};
   border-radius: 1.6rem;
 
   ${device.tablet} {

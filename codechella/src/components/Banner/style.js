@@ -1,6 +1,7 @@
 import styled from "styled-components";
-import { colors } from "@/styles/colors";
+
 import { device } from "@/styles/devices";
+import { backgroundImage } from "@/styles/mixin";
 
 export const BannerBackground = styled.div`
   width: 100%; 
@@ -8,10 +9,8 @@ export const BannerBackground = styled.div`
   
   background-color: rgba(0,0,0,.2);
   background-image: url(${props => props.bannerImage});
-  background-repeat: no-repeat;
-  background-size:cover;
-  background-position: center;  
-  mix-blend-mode: normal;
+  ${backgroundImage('normal', 'cover')};
+  background-attachment: fixed;
 
   ${device.tablet} {
     height: 38.4rem;

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { device } from "@/styles/devices";
 import { colors } from "@/styles/colors";
+import { backgroundImage } from "@/styles/mixin";
 
 export const CTASection = styled.section`
   padding: 3.2rem 2.4rem 2.4rem 2.4rem;
@@ -23,9 +24,7 @@ export const CTASection = styled.section`
     height: 38.1rem;
 
     background-image: url(${props => props.theme.images.cta});
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+    ${backgroundImage('normal', 'cover')}
     border-radius: 1.6rem;
 
     ${device.tablet} {
