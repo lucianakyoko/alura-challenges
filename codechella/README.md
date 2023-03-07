@@ -32,10 +32,10 @@ A página do **CodeChellas** deve seguir os seguintes requisitos:
 | ✔️ | Uma página para explicar a experiência do festival, mostrando os diversos palcos |
 | ✔️ | Uma página para demonstrar os setores disponíveis para compra de ingresso |
 | ✔️ | Uma página de perguntas frequentes |
-| - | Uma página para compra de ingressos através do preenchimento do formulário |
-| - | Uma página para mostrar o ingresso gerado |
-| - | É muito importante que o site seja responsivo para dar aos clientes a facilidade de comprar através de dispositivos mobiles |
-| - | Layout base desenvolvido pela designer: [Figma](https://www.figma.com/file/xHLPBeA2ujaXbBjHMK9xh7/CodeChella-%7C-Challenge-I---Front-end-2023?node-id=)  |
+| ✔️ | Uma página para compra de ingressos através do preenchimento do formulário |
+| ✔️ | Uma página para mostrar o ingresso gerado |
+| ✔️ | É muito importante que o site seja responsivo para dar aos clientes a facilidade de comprar através de dispositivos mobiles |
+| ✔️ | Layout base desenvolvido pela designer: [Figma](https://www.figma.com/file/xHLPBeA2ujaXbBjHMK9xh7/CodeChella-%7C-Challenge-I---Front-end-2023?node-id=)  |
 
 ---
 
@@ -62,13 +62,19 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 | Semana | Sprint | Trello |Status |
 | --- | --- | --- | --- |
 | 1 | Conheça o CodeChella | [Backlogs - Semana 01](https://trello.com/b/wakg1ft4/codechella-semana-1) | ✔️ |
-| 2 | Expandindo o festival | [Backlogs - Semana 02](https://trello.com/b/sNWh1Ggl/codechella-semana-2) | 🔵 |
+| 2 | Expandindo o festival | [Backlogs - Semana 02](https://trello.com/b/sNWh1Ggl/codechella-semana-2) | ✔️ |
 | 3 | - | - | ⚫ |
 | 4 | - | - | ⚫ |
 
 ---
 
 ## 🚩 Indo alem
-  Neste challenge era possível escolher um tema dentre os dois disponíveis (summer ou boreal). Eu optei por desenvolver com os dois temas e permitir que o usuário realizasse a troca do tema.
+  -> Neste challenge era possível escolher um tema dentre os dois disponíveis (summer ou boreal). Eu optei por desenvolver com os dois temas e permitir que o usuário realizasse a troca do tema.
 
-  Criação do botão que realiza o "scroll" para o topo da página.
+  -> Criação do botão que realiza o "scroll" para o topo da página.
+
+  -> O formulário para gerar o ticket conta com:
+    - duas etapas (dados pessoais e e informações do evento)
+    - um componente que mostra a etapa
+
+

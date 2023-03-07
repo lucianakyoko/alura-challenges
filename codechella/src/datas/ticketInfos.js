@@ -12,15 +12,19 @@ const ticketIfos = [
     detail: 'ticketType'
   },
   {
-    label: 'Pista',
+    label: 'Pista Premium',
     detail: 'sector'
   },
   {
-    label: 'PistaPremium',
+    label: 'Pista Comum',
     detail: 'sector'
   },
   {
-    label: 'Cadeiras',
+    label: 'Cadeiras Térreo',
+    detail: 'sector'
+  },
+  {
+    label: 'Cadeiras Superiores',
     detail: 'sector'
   },
   {

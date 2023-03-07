@@ -27,10 +27,9 @@ export function BuyTicketScreen() {
         <h2 className={`${calistogaFont.className} title`}>Preencha o formulário a seguir:</h2>
 
         <form className="form" action="">
-          <Steps />
+          <Steps step={step} />
           {step === 1 && <PersonalInformationForm /> }
           {step === 2 && <EventInformationForm ticketInfos={ticketInfos} />}
-
           <div className='buttons'>
             {step === 1 &&
               <button className='button' onClick={NextStep}>
@@ -45,7 +44,7 @@ export function BuyTicketScreen() {
                   <BiLeftArrowAlt className="icon" color='#444' />
                   <span className='text'>voltar</span>
                 </div>        
-                <button className='button' onClick={PreviousStep}>
+                <button type="submit" className='button' onClick={PreviousStep}>
                   <span className='text'>confirmar</span>
                   <BiRightArrowAlt className="icon" color='white' />
                 </button>        

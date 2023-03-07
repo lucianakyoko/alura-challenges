@@ -25,7 +25,7 @@ export function EventInformationForm({ticketInfos}) {
         options={sectors}
       />
       <SelectionField 
-        label="date"
+        label="data"
         name="date"
         id="date"
         options={dates}

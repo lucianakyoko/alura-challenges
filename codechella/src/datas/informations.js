@@ -5,19 +5,19 @@ const infos = [
   },
   {
     question: 'Qual é a classificação etária?',
-    answer: 'Infelizmente, por determinação legal, não é permitida a entrada de menores de 18 anos, mesmo que seja emancipado ou esteja acompanhados dos pais ou responsáveis legais.'
+    answer: 'A partir de 16 anos, todo mundo pode entrar. De 13 a 15 anos, tem que estar acompanhado dos pais ou responsáveis legais. Menores de 10 anos não podem entrar.'
   },
   {
     question: 'Quais são os setores disponíveis?',
-    answer: `Os setores disponíveis neste festival são: Pista, Pista Premium e Cadeiras. Confira os detalhes clicando neste <a class="link" href=/mapa-de-setores>link</a>!`,
+    answer: `Os setores disponíveis neste festival são: Pista Premium, Pista Comum, Cadeiras Térreo, Cadeiras Superiores e Rampas. Confira os detalhes clicando neste <a class="link" href=/mapa-de-setores>link</a>!`,
   },
   {
     question: 'Quais são os itens proibidos',
-    answer: 'É proibido entrar no CodeChella com qualquer um dos seguintes items: substâncias inflamáveis, corrosivas e ou tóxicas, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, capacetes e embalagens rígidas.'
+    answer: 'Garrafas, latas, bebidas, utensílios de armazenagem, embalagens rígidas com tampa, capacetes, cadeiras ou bancos, armas de fogo e armas brancas, objetos pontiagudos, cortantes e/ou perfurantes, correntes e cinturões, fogos de artifício, objetos de vidro, substâncias inflamáveis, cigarro eletrônico, corrosivas e ou tóxicas, revistas, jornais, livros e copo térmico ou similares.'
   },
   {
-    question: 'O evento possui acessibilidade?',
-    answer: 'Sim, o CodeChella possui toda estrutura necessária para acessibilidade em todas as áreas do evento.'
+    question: 'Quem tem direito a meia-entrada?',
+    answer: 'De acordo com a Lei Federal, têm direito ao benefício da meia-entrada aqueles que preencherem os requisitos e apresentarem os documentos comprobatórios.'
   },
 ];
 
