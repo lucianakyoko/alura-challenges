@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import { SlArrowUp } from 'react-icons/sl';
+import { RiArrowDropUpLine } from 'react-icons/ri';
 
 import {
   Button
@@ -35,7 +35,7 @@ export function ScrollToTopButton() {
       className={showButton ? 'active' : ''}
       onClick={scrollToTop}
     >
-      <SlArrowUp color='white' className='icon' />
+      <RiArrowDropUpLine color='white' className='icon' />
     </Button>
   );
 }

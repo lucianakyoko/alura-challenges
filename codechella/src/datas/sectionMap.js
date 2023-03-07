@@ -1,5 +1,4 @@
-const sectionMapList 
-= [
+const sectionMapList = [
   {
     label: 'Pista',
     image: '1',

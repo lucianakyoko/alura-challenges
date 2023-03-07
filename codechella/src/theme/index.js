@@ -9,6 +9,8 @@ export const borealTheme = () => ({
   pageBackground: colors.boreal.gradient,
   button: colors.boreal.primary100,
   buttonHover: colors.boreal.tertiary400,
+  secondaryButton: colors.boreal.tertiary300,
+  secondaryButtonHover: colors.boreal.tertiary200,
   footer: colors.boreal.primary100,
   images: {
     banner: '/banners/boreal-home-banner.png',
@@ -32,6 +34,8 @@ export const summerTheme = () => ({
   pageBackground: colors.summer.gradient,
   button: colors.summer.primary100,
   buttonHover: colors.summer.tertiary400,
+  secondaryButton: colors.summer.tertiary300,
+  secondaryButtonHover: colors.summer.tertiary200,
   footer: colors.summer.tertiary300,
   images: {
     banner: '/banners/summer-home-banner.png',

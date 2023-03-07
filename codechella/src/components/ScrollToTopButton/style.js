@@ -23,7 +23,7 @@ export const Button = styled.span`
     background-color: ${props => props.theme.buttonHover};
   }
   .icon {
-    font-size: 2.8rem;
+    font-size: 3.2rem;
   }
   &.active {
     display: flex;
