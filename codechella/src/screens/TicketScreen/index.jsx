@@ -12,12 +12,16 @@ import {
 import { Steps } from "./Steps";
 import { useState } from "react";
 import { Popup } from "@/components/Popup";
+import { useRouter } from "next/router";
+import { Loading } from "@/components/Loading";
 
 
 export function TicketScreen() {
+  const router = useRouter();
   const [disabled, setDisabled] = useState(false)
   const [ageNotAlowedPopup, setAgeNotAlowedPopup] = useState(false);
-  const [notFilledPopup, setNotFilledPopup] = useState(false)
+  const [notFilledPopup, setNotFilledPopup] = useState(false);
+  const [loading, setLoading] = useState(false);
 
   const formTemplate = {
     name: '',
@@ -74,7 +78,6 @@ export function TicketScreen() {
         setDisabled(false);
         setNotFilledPopup(false)
       }
-
     }
   };
 
@@ -91,6 +94,43 @@ export function TicketScreen() {
     isLastStep,
     isFirstStep
   } = useForm(formComponents);
+
+  const handleCreateTicket = async () => {
+    try {
+      setLoading(true);
+      await fetch('/api/ticket', {
+        body: JSON.stringify({
+          name: data.name,
+          email: data.email,
+          birthday: data.birthday,
+          sector: data.sector,
+          ticket: data.ticket,
+          entryType: data.entryType,
+          eventDate: data.eventDate
+        }),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        method: 'POST',
+      });
+      await router.push({
+        pathname: '/confirmacao',
+        query:{
+          name: data.name,
+          email: data.email,
+          birthday: data.birthday,
+          sector: data.sector,
+          ticket: data.ticket,
+          entryType: data.entryType,
+          eventDate: data.eventDate
+        }
+      });
+      setLoading(false);
+    } catch (error) {
+      console.log(error)
+      setLoading(false)
+    }
+  }
 
   return (
     <PageLayout
@@ -120,7 +160,7 @@ export function TicketScreen() {
                   <BiRightArrowAlt className="icon" color="#FFF"/>
                 </button>
               ) : (
-                <button className="button" type="button">
+                <button className="button" type="button" onClick={handleCreateTicket}>
                   <span className='text'>Confirmar</span>
                   <FiSend className="icon" color="#FFF"/>
                 </button>
@@ -136,6 +176,8 @@ export function TicketScreen() {
       {notFilledPopup && 
         <Popup handleClick={handleNotFilledPopup} title="Tente novamente" message="Escolha o setor desejado no mapa antes de prosseguir" />
       }
+
+      {loading && <Loading text="Gerando seu ingresso..." />}
     </PageLayout>
   );
 }

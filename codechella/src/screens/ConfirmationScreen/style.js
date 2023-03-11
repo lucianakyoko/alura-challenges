@@ -1,3 +1,4 @@
+import { colors } from '@/styles/colors';
 import { device } from '@/styles/devices';
 import { backgroundImage } from '@/styles/mixin';
 import styled from 'styled-components';
@@ -8,7 +9,7 @@ export const ConfirmationContainer = styled.div`
   flex-direction: column;
   align-items: center;
   gap: 3.2rem;
-
+  
   ${device.tablet} {
     padding: 6.4rem 6rem;
   }
@@ -25,6 +26,35 @@ export const ConfirmationContainer = styled.div`
 
     ${device.laptop} {
       max-width: 79.2rem;
+    }
+  }
+
+  .download-btn {
+    padding: 1.6rem;
+
+    display: flex;
+    align-items: center;
+    gap: 1.6rem;
+
+    background-color: ${props => props.theme.button};
+    border-radius: 1.6rem;
+    border: none;
+    box-shadow: ${colors.boxShadow};
+
+    transition: all .4s;
+    &:hover {
+      background-color: ${props => props.theme.buttonHover};
+      cursor: pointer;
+    }
+
+    .text {
+      color: ${colors.white};
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 4rem;
+    }
+    .icon {
+      font-size: 3.2rem;
     }
   }
 `;
@@ -130,25 +160,12 @@ export const TicketWrapper = styled.div`
             line-height: 4rem;
             .highlight {
               font-weight: 700;
+              &.upper {
+                text-transform: uppercase;
+              }
             }
           }
         }
-        /* display: flex;
-        flex-direction: column;
-        align-items: center;
-        ${device.laptop} {
-          align-items: flex-start;
-        }
-
-        .info {
-          color: ${props => props.theme.text};
-          font-size: 2rem;
-          font-weight: 400;
-          line-height: 4rem;
-          .highlight {
-            font-weight: 700;
-          }
-        } */
       }
     }
   }

@@ -14,7 +14,7 @@ export function ConfirmationForm({data}) {
 
       <ConfirmationContainer>
         <h3 className='confirmation-title'>Falta pouco!</h3>
-        <p className='text'>Por favor, verifique os dados abaixo e clique em confirmar para gerar seu ingresso</p>
+        <p className='text'>Por favor, verifique os dados abaixo e clique em confirmar para gerar seu ingresso.</p>
         <div className='infos-wrapper'>
           <div className='infos'>
             <p className='info'>Nome completo: <span className='data'>{data.name}</span></p>
