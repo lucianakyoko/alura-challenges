@@ -45,7 +45,11 @@ As ferramentas e tecnologias eram de livre escolha. Eu escolhi desenvolver o pro
   <li>React</li>
   <li>Next.js</li>
   <li>Styled-components</li>
+  <li>MongoDB</li>
   <li>react-icons</li>
+  <li>mongoose</li>
+  <li>html2canvas</li>
+  <li>react-confetti</li>
 </ul>
 
 ---
@@ -69,12 +73,19 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 ---
 
 ## 🚩 Indo alem
-  -> Neste challenge era possível escolher um tema dentre os dois disponíveis (summer ou boreal). Eu optei por desenvolver com os dois temas e permitir que o usuário realizasse a troca do tema.
+  -> Neste challenge era possível escolher um tema dentre os dois disponíveis (summer ou boreal). Eu optei por desenvolver com os dois temas e permitir que o usuário realizasse a troca de acordo com suas preferências.
 
   -> Criação do botão que realiza o "scroll" para o topo da página.
 
+  - efeito paralaxe simples no banner de todas as páginas.
+
   -> O formulário para gerar o ticket conta com:
-    - duas etapas (dados pessoais e e informações do evento)
-    - um componente que mostra a etapa
+    - 3 etapas (dados pessoais, informações do evento e confirmação)
+    - um popup é exibido na tela quando o preenchimento do formulário não for satisfatório
+    - um componente que mostra a etapa de acordo com o preenchimento do formulário
+    - mapa interativo. O usuário poderá escolher o setor desejado apenas clicando no mapa
+    - loding de carregamento. Este componente é ativado enquanto os dados estão sendo salvos no banco de dados
+    - redirecionamento automático para a página que mostra o ingresso. 
+    - Efeito de confete é disparado assim o o ingresso é exibido.
 
 
