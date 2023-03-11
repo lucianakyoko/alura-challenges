@@ -25,5 +25,4 @@ export function Banner({heroText, page}) {
       </BannerContent>
     </BannerBackground>
   );
-
 }

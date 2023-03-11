@@ -11,6 +11,7 @@ export const GlobalStyles = createGlobalStyle`
   }
   body {
     font-family: 'Raleway', sans-serif;
+    overflow-x: hidden;
   }
   ul {
     list-style: none;

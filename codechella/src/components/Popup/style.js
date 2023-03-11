@@ -1,4 +1,5 @@
 import { colors } from "@/styles/colors";
+import { device } from "@/styles/devices";
 import styled from "styled-components";
 
 export const Background = styled.div`
@@ -22,6 +23,12 @@ export const Background = styled.div`
 
     background: ${props => props.theme.pageBackground};
     transform: translate(-50%, -50%);
+
+    ${device.tablet} {
+      padding: 3.2rem;
+      width: 50rem;
+      height: 24rem;
+    }
 
     .close-btn {
       width: fit-content;
@@ -59,12 +66,14 @@ export const Background = styled.div`
       .title {
         color: darkred;
         font-size: 2.4rem;
+        text-align: center;
       }
 
       .message {
         color: ${props => props.theme.text};
         font-size: 2rem;
         line-height: 4rem;
+        text-align: center;
       }
     }
   }
