@@ -30,10 +30,18 @@ export function ConfirmationScreen() {
             <div className="datas">
               <h3 className="user-name">Moni Hillman</h3>
               <div className="infos">
-                <p className="info">Ingresso <span className="highlight"> Cortesia</span></p>
-                <p className="info">Setor <span className="highlight">Pista</span></p>
-                <p className="info">Data: <span className="highlight">11/03</span></p>
-                <p className="info">Local: <span className="highlight">São Paulo</span></p>
+                <div className="infos-a">
+                  <p className="info">Setor <span className="highlight">Pista</span></p>
+                  <p className="info">Entrada <span className="highlight"> Meia-entrada</span></p>
+                  <p className="info">Setor <span className="highlight"> CS12B</span></p>
+
+                </div>
+
+                <div className="infos-b">
+                  <p className="info">Data: <span className="highlight">11/03 - Sábado</span></p>
+                  <p className="info">Local: <span className="highlight">São Paulo-SP</span></p>
+                  <p className="info">Abertura: <span className="highlight">16h</span></p>
+                </div>
               </div>
             </div>
           </div>

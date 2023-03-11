@@ -107,6 +107,35 @@ export const TicketWrapper = styled.div`
         display: flex;
         flex-direction: column;
         align-items: center;
+        gap: 3.2rem;
+
+        ${device.laptop} {
+          flex-direction: row;
+        }
+
+        .infos-a, 
+        .infos-b {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+
+          ${device.laptop} {
+            align-items: flex-start;
+          }
+
+          .info {
+            color: ${props => props.theme.text};
+            font-size: 2rem;
+            font-weight: 400;
+            line-height: 4rem;
+            .highlight {
+              font-weight: 700;
+            }
+          }
+        }
+        /* display: flex;
+        flex-direction: column;
+        align-items: center;
         ${device.laptop} {
           align-items: flex-start;
         }
@@ -119,7 +148,7 @@ export const TicketWrapper = styled.div`
           .highlight {
             font-weight: 700;
           }
-        }
+        } */
       }
     }
   }

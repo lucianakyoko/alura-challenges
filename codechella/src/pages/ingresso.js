@@ -1,2 +1,2 @@
-import { BuyTicketScreen } from "@/screens/BuyTicketScreen";
-export default BuyTicketScreen;
+import { TicketScreen } from "@/screens/TicketScreen";
+export default TicketScreen;
