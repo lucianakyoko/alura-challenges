@@ -6,7 +6,7 @@ import { ThemeProvider } from "styled-components";
 import { ThemeToggleButton } from "@/components/ThemeToggleButton";
 
 const ralewayFont = Raleway({
-  weight: ['100', '200', '300', '400', '500', '600', '700', '800', '900'],
+  weight: ['400', '500', '700', '800'],
   subsets: ['latin']
 });
 

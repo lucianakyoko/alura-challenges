@@ -18,7 +18,7 @@ export function Footer() {
           <SocialLinks />
         </div>
       </div>
-      <p className="text"><span>Desenvolvido por Alura</span><span> Projeto fictício sem fins comerciais.</span></p>
+      <p className="text"><span>Desenvolvido por <a href="http://lucianakyoko.com" target="_blank" rel="noopener noreferrer">Luciana Kyoko</a> </span><span> Projeto fictício sem fins comerciais.</span></p>
     </FooterContainer>
   );
 }

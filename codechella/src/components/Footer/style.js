@@ -40,6 +40,15 @@ export const FooterContainer = styled.footer`
     font-weight: 500;
     line-height: 4rem;
     text-align: center;
+
+    a {
+      color: ${props => props.theme.text};
+      font-weight: 700;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
   }
 
   ${device.tablet} {
