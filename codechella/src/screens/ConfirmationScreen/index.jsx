@@ -61,7 +61,7 @@ export function ConfirmationScreen() {
           </div>
 
           <div className="ticket_details">
-            <div className="barcode" bgImage="/qr-code.png"></div>
+            <div className="barcode"></div>
             <div className="datas">
               <h3 className="user-name">{name}</h3>
               <div className="infos">
