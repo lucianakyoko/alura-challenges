@@ -1,3 +1,4 @@
+import { scrollToTop } from '@/utils/scrollToTop';
 import {
   Container,
   Map,
@@ -20,6 +21,7 @@ export function InteractiveMap({data, upDateFieldHandle}) {
     }
   }
   const handleClick = event => {
+    scrollToTop(1300);
     upDateFieldHandle('sector', event.target.id);
     upDateFieldHandle('ticket', converString(event.target.id));
   }

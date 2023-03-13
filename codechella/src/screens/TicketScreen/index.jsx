@@ -14,6 +14,7 @@ import { useState } from "react";
 import { Popup } from "@/components/Popup";
 import { useRouter } from "next/router";
 import { Loading } from "@/components/Loading";
+import { scrollToTop } from "@/utils/scrollToTop";
 
 
 export function TicketScreen() {
@@ -59,7 +60,8 @@ export function TicketScreen() {
 
     if(userAge >= 10) {
       setDisabled(false);
-      changeStep(currentStep + 1, event)
+      changeStep(currentStep + 1, event);
+      scrollToTop(400);
     } else {
       setAgeNotAlowedPopup(true);
       setDisabled(true);

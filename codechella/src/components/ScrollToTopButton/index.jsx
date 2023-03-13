@@ -1,5 +1,6 @@
 import { useEffect, useState } from 'react';
 import { RiArrowDropUpLine } from 'react-icons/ri';
+import { scrollToTop } from '@/utils/scrollToTop';
 
 import {
   Button
@@ -8,13 +9,6 @@ import {
 export function ScrollToTopButton() {
   const [showButton, setShowButton] = useState(false);
   
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
-  }
-
   useEffect(() => {
     const handleScroll = () => {
       if(window.scrollY > 300) {
