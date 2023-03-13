@@ -11,7 +11,7 @@
   <a href="#-tecnologias">Tecnologias</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-sprints">Sprints</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#-indo-alem">Indo além</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <!-- <a href="#-preview">Preview</a>  -->
+  <a href="#-preview">Preview</a> 
 </p>
 
 ---
@@ -46,8 +46,8 @@ As ferramentas e tecnologias eram de livre escolha. Eu escolhi desenvolver o pro
   <li>Next.js</li>
   <li>Styled-components</li>
   <li>MongoDB</li>
-  <li>react-icons</li>
   <li>mongoose</li>
+  <li>react-icons</li>
   <li>html2canvas</li>
   <li>react-confetti</li>
 </ul>
@@ -67,8 +67,8 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 | --- | --- | --- | --- |
 | 1 | Conheça o CodeChella | [Backlogs - Semana 01](https://trello.com/b/wakg1ft4/codechella-semana-1) | ✔️ |
 | 2 | Expandindo o festival | [Backlogs - Semana 02](https://trello.com/b/sNWh1Ggl/codechella-semana-2) | ✔️ |
-| 3 | - | - | ⚫ |
-| 4 | - | - | ⚫ |
+| 3 | Inscrições e Ingressos | [Backlogs - Semana 03](https://trello.com/b/NnQIEPIw/codechella-semana-3-e-4) | ✔️ |
+| 4 | Inscrições e Ingressos | [Backlogs - Semana 03](https://trello.com/b/NnQIEPIw/codechella-semana-3-e-4) | ✔️ |
 
 ---
 
@@ -86,6 +86,13 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
     - mapa interativo. O usuário poderá escolher o setor desejado apenas clicando no mapa
     - loding de carregamento. Este componente é ativado enquanto os dados estão sendo salvos no banco de dados
     - redirecionamento automático para a página que mostra o ingresso. 
-    - Efeito de confete é disparado assim o o ingresso é exibido.
+    - Efeito de confete é disparado assim o ingresso é exibido.
+    - Possibilidade do usuário realizar o download do ingresso.
+  
+---
 
+## 🎯 Preview
+<p align="center">
+  <img src="../.github/codechella-preview-fullpage.png" alt="Preview da página Codechella" width="70%"/>
+</p>
 
