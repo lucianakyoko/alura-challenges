@@ -68,26 +68,28 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
 | 1 | Conheça o CodeChella | [Backlogs - Semana 01](https://trello.com/b/wakg1ft4/codechella-semana-1) | ✔️ |
 | 2 | Expandindo o festival | [Backlogs - Semana 02](https://trello.com/b/sNWh1Ggl/codechella-semana-2) | ✔️ |
 | 3 | Inscrições e Ingressos | [Backlogs - Semana 03](https://trello.com/b/NnQIEPIw/codechella-semana-3-e-4) | ✔️ |
-| 4 | Inscrições e Ingressos | [Backlogs - Semana 03](https://trello.com/b/NnQIEPIw/codechella-semana-3-e-4) | ✔️ |
+| 4 | Inscrições e Ingressos | [Backlogs - Semana 04](https://trello.com/b/NnQIEPIw/codechella-semana-3-e-4) | ✔️ |
 
 ---
 
 ## 🚩 Indo alem
-  -> Neste challenge era possível escolher um tema dentre os dois disponíveis (summer ou boreal). Eu optei por desenvolver com os dois temas e permitir que o usuário realizasse a troca de acordo com suas preferências.
+  - Neste challenge era possível escolher um tema dentre os dois disponíveis (summer ou boreal). Eu optei por desenvolver com os dois temas e permitir que o usuário realizasse a troca de acordo com suas preferências.
 
-  -> Criação do botão que realiza o "scroll" para o topo da página.
+  - Criação do botão que realiza o "scroll" para o topo da página.
 
   - efeito paralaxe simples no banner de todas as páginas.
 
   -> O formulário para gerar o ticket conta com:
-    - 3 etapas (dados pessoais, informações do evento e confirmação)
-    - um popup é exibido na tela quando o preenchimento do formulário não for satisfatório
-    - um componente que mostra a etapa de acordo com o preenchimento do formulário
-    - mapa interativo. O usuário poderá escolher o setor desejado apenas clicando no mapa
-    - loding de carregamento. Este componente é ativado enquanto os dados estão sendo salvos no banco de dados
-    - redirecionamento automático para a página que mostra o ingresso. 
-    - Efeito de confete é disparado assim o ingresso é exibido.
-    - Possibilidade do usuário realizar o download do ingresso.
+  <ul>
+    <li>3 etapas (dados pessoais, informações do evento e confirmação)</li>
+    <li>um popup é exibido na tela quando o preenchimento do formulário não for satisfatório</li>
+    <li>um componente que mostra a etapa de acordo com o preenchimento do formulário</li>
+    <li>mapa interativo. O usuário poderá escolher o setor desejado apenas clicando no mapa</li>
+    <li>loding de carregamento. Este componente é ativado enquanto os dados estão sendo salvos no banco de dados</li>
+    <li>redirecionamento automático para a página que mostra o ingresso.</li>
+    <li>Efeito de confete é disparado assim o ingresso é exibido.</li>
+    <li>Possibilidade do usuário realizar o download do ingresso.</li>
+  </ul>
   
 ---
 
