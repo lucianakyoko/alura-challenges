@@ -26,7 +26,6 @@ export const Container = styled.div `
       gap: 3.2rem;
     }
   }
-
 `;
 
 export const Map = styled.svg`
@@ -90,3 +89,31 @@ export const FieldContainer = styled.div`
     border: none;
   }
 `;
+
+export const Popup = styled.div`
+  padding: .8rem 1.6rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;  
+  
+  border-left: 8px solid ${props => props.theme.highlightColor};
+  background-color: ${colors.boreal.tertiary300};
+  box-shadow: ${colors.boxShadow};
+
+  position: fixed;
+  top: 50%;
+  left: 50%;
+
+  .header {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: ${colors.gray};
+  }
+  .selected-sector {
+    color: ${colors.gray};
+    font-size: 1.6rem;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+`

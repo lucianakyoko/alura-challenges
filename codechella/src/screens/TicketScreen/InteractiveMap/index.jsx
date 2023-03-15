@@ -1,14 +1,18 @@
 import { scrollToTop } from '@/utils/scrollToTop';
+import { useState } from 'react';
 import {
   Container,
   Map,
   SectorWrapper,
   SectorItem,
 
-  FieldContainer
+  FieldContainer,
+  Popup
 } from './style';
 
 export function InteractiveMap({data, upDateFieldHandle}) {
+  const [showPopup, setShowPopup] = useState(true);
+ 
   const converString = string => { 
     if(string.startsWith('cs')) {
       return "Cadeira Superior";
@@ -24,6 +28,11 @@ export function InteractiveMap({data, upDateFieldHandle}) {
     scrollToTop(1300);
     upDateFieldHandle('sector', event.target.id);
     upDateFieldHandle('ticket', converString(event.target.id));
+
+    setShowPopup(true);
+    setTimeout(() => {
+      setShowPopup(false);
+    }, 1500)
   }
 
   return (
@@ -1087,6 +1096,13 @@ export function InteractiveMap({data, upDateFieldHandle}) {
           <span className='data'>{data.ticket}</span>
         </FieldContainer>
       </div>
+
+      {showPopup &&
+        <Popup>
+          <p className='header'>Selecionado:</p>
+          <p className='selected-sector'>{data.sector} - {data.ticket}</p>
+        </Popup>
+      }
     </Container>
   );
 }
