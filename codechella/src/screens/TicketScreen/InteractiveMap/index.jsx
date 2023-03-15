@@ -11,7 +11,7 @@ import {
 } from './style';
 
 export function InteractiveMap({data, upDateFieldHandle}) {
-  const [showPopup, setShowPopup] = useState(true);
+  const [showPopup, setShowPopup] = useState(false);
  
   const converString = string => { 
     if(string.startsWith('cs')) {
