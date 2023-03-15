@@ -7,6 +7,8 @@ export const Container = styled.div `
   height: 100%;
   overflow: hidden;
 
+  display: flex;
+  flex-direction: column;
   position: relative;
 
   .text {
@@ -68,7 +70,6 @@ export const FieldContainer = styled.div`
   display: flex;
   flex-direction: column;
   gap: .8rem;
-
 
   .label {
     color: ${props => props.theme.text};

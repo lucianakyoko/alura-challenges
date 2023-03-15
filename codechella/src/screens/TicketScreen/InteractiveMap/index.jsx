@@ -1084,7 +1084,7 @@ export function InteractiveMap({data, upDateFieldHandle}) {
           </g>
         </g>
       </Map>
-
+      
       <div className='setor-wrapper'>
         <FieldContainer className="input">
           <span className='label'>Setor:</span>
