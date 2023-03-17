@@ -1,26 +1,28 @@
 import { useRouter } from "next/router";
-import { useTheme } from "styled-components";
+import { useEffect, useRef, useState } from "react";
 import html2canvas from 'html2canvas';
 import { MdDownload } from 'react-icons/md';
 import Confetti from 'react-confetti';
 import { PageLayout } from "@/components/PageLayout";
+import { Ticket } from "./Ticket";
 
 import {
-  ConfirmationContainer,
-  TicketWrapper
+  Container,
 } from './style';
-import { useEffect, useRef, useState } from "react";
 
 export function ConfirmationScreen() {
-  const ticketWrapper = useRef(null);
+  const [isDownloadMode, setIsDownloadMode] = useState(false);
   const [showConfetti, setShowConfetti] = useState(false);
-
+  const ticketWrapper = useRef(null);
   const router = useRouter();
-  const { name, sector, ticket, entryType, eventDate } = router.query;
-
-  const theme = useTheme();
-  const logo = theme.logo;
-  const logoIcon = theme.logoIcon;
+  const { 
+    name,
+    birthday,
+    sector, 
+    ticket, 
+    entryType, 
+    eventDate 
+  } = router.query;
 
   useEffect(() => {
     setTimeout(() => {
@@ -35,52 +37,38 @@ export function ConfirmationScreen() {
 
     return () => clearTimeout(confettiTimer);
   }, [showConfetti]);
-  
+
   const saveTicketImage = () => {
-    html2canvas(ticketWrapper.current).then(function(canvas) {
-      const ticketImg = canvas.toDataURL('image/png');
-      const downloadLink = document.createElement('a');
-      downloadLink.href = ticketImg;
-      downloadLink.download = 'meu_ingresso_codechella.png';
-      downloadLink.click();
-    });
+    setIsDownloadMode(true);
+    setTimeout(() => {
+      html2canvas(ticketWrapper.current).then(function(canvas) {
+        const ticketImg = canvas.toDataURL('image/png');
+        const downloadLink = document.createElement('a');
+        downloadLink.href = ticketImg;
+        downloadLink.download = 'meu_ingresso_codechella.png';
+        downloadLink.click();
+      });
+    }, 500);
   }
   return(
-    <PageLayout 
+    <PageLayout
       pageTitle='Seu ingresso | CodeChella'
       page='confirmation'
       heroText='Seu ingresso está aqui!'
     >
-      <ConfirmationContainer>
+
+      <Container className={isDownloadMode ? 'download-mode' : ''}>
         <h2 className="title">Uhul, agora sim! Seu ingresso está aqui, apresente na entrada do evento e divirta-se!</h2>
-
-        <TicketWrapper ref={ticketWrapper} id="ticket-wrapper">
-          <div className="logos">
-            <img className="full" src={logo} alt="Logo CodeChella" />
-            <img className="icon" src={logoIcon} alt="Ícone do Codechella" />
-          </div>
-
-          <div className="ticket_details">
-            <div className="barcode"></div>
-            <div className="datas">
-              <h3 className="user-name">{name}</h3>
-              <div className="infos">
-                <div className="infos-a">
-                  <p className="info">Ingresso <span className="highlight">{ticket}</span></p>
-                  <p className="info">Entrada <span className="highlight">{entryType}</span></p>
-                  <p className="info">Setor <span className="highlight upper">{sector}</span></p>
-
-                </div>
-
-                <div className="infos-b">
-                  <p className="info">Data: <span className="highlight">{eventDate}</span></p>
-                  <p className="info">Local: <span className="highlight">São Paulo-SP</span></p>
-                  <p className="info">Abertura: <span className="highlight">16h</span></p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </TicketWrapper>
+        <Ticket
+          isDownloadMode={isDownloadMode}
+          name={name}
+          birthday={birthday}
+          sector={sector}
+          ticket={ticket}
+          entryType={entryType}
+          eventDate={eventDate}
+          ref={ticketWrapper}
+        />
 
         <button 
           type="button" 
@@ -91,7 +79,8 @@ export function ConfirmationScreen() {
           <span className="text">Baixar ingresso!</span>
           <MdDownload color="white" className="icon"/>
         </button>
-      </ConfirmationContainer>
+      </Container>
+
       {showConfetti && <Confetti />}
     </PageLayout>
   );

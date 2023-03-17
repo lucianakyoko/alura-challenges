@@ -58,7 +58,7 @@ export function TicketScreen() {
     const currentYear = new Date().getFullYear();
     const userAge = currentYear - userBirthdayYear
 
-    if(userAge >= 10) {
+    if(userAge >= 13) {
       setDisabled(false);
       changeStep(currentStep + 1, event);
       scrollToTop(400);
@@ -116,7 +116,7 @@ export function TicketScreen() {
         method: 'POST',
       });
       await router.push({
-        pathname: '/confirmacao',
+        pathname: '/seu-ingresso',
         query:{
           name: data.name,
           email: data.email,
@@ -172,7 +172,7 @@ export function TicketScreen() {
         </div>
       </TitleFormWrapper>
       {ageNotAlowedPopup && 
-        <Popup handleClick={HandleAgeNotAlowedPopup} title="Atenção" message="Crianças menores de 10 anos não são permitidas no festival" />
+        <Popup handleClick={HandleAgeNotAlowedPopup} title="Atenção" message="Crianças de até 12 anos não são permitidas no festival" />
       }
       
       {notFilledPopup && 
