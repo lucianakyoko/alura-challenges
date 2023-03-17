@@ -88,7 +88,17 @@ A cada semana do **Alura Challenges** nos foram disponibilizados um quadro no Tr
     <li>loding de carregamento. Este componente é ativado enquanto os dados estão sendo salvos no banco de dados</li>
     <li>redirecionamento automático para a página que mostra o ingresso.</li>
     <li>Efeito de confete é disparado assim o ingresso é exibido.</li>
-    <li>Possibilidade do usuário realizar o download do ingresso.</li>
+    <li>Botão no topo do ingresso que permite o usuário ver o verso do ingresso.</li>
+    <li>
+    <ul>
+      Verso do ingresso mostra: 
+      <li>Mapa cinza com destaque colorido apenas no setor desejado</li>
+      <li>Quando o usuário tiver entre 13 e 15 anos, uma mensagem informando a necessidade de acompanhamento de pais/ responsáveis</li>
+      <li>Quando o usuário optar pela meia entrada, mostra uma mensangem informando a necessidade de documento comprobatório</li>
+      <li>Quando o usuário for maior ou igual a 16 anos e optar pelo ingresso cortesia ou inteira, mostra mensagem com itens que são proibidos no festival</li>
+    </ul>
+    </li>
+    <li>Possibilidade do usuário realizar o download do ingresso (frente e verso).</li>
   </ul>
   
 ---
