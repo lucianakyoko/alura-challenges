@@ -23,6 +23,12 @@ export const XpItem = styled.li`
     }
     &:nth-child(even) {
       flex-direction: row-reverse;
+
+      .title-text {
+        .text {
+          text-align: right;
+        }
+      }
     }
   }
 
