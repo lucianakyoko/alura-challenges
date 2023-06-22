@@ -1,6 +1,6 @@
 import { Inter } from "next/font/google";
 
-export const InterFont = Inter({
+export const interFont = Inter({
   weight: [
     '400',
     '500',
