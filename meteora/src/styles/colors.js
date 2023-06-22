@@ -1,7 +1,13 @@
 export const colors = {
   primary: {
     black: '#000000',
-    gray: '#CCCCCC',
+    white: "#FFFFFF",
+    gray: {
+      100: '#CCCCCC',
+      120: '#CED4DA',
+      150: '#6C757D',
+      200: '#343A40'
+    },
     yellow: '#DAFF01',
     purple: '#9353FF'
   },
