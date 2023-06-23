@@ -6,7 +6,8 @@ export const colors = {
       100: '#CCCCCC',
       120: '#CED4DA',
       150: '#6C757D',
-      200: '#343A40'
+      200: '#343A40',
+      250: '#979797'
     },
     yellow: '#DAFF01',
     purple: '#9353FF'
