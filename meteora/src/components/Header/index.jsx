@@ -8,7 +8,7 @@ import {
   HeaderContainer,
 } from './styles';
 
-export function Header() {
+export function Header({isvisible, list, addSavedProducts}) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const handleMenu = () => setIsMenuOpen(!isMenuOpen);
 
@@ -32,11 +32,26 @@ export function Header() {
             isMenuOpen={isMenuOpen}
             handleMenu={handleMenu}
           />
-          <SearchBar />
+          {isvisible && 
+            <SearchBar
+              list={list}
+              addSavedProducts={addSavedProducts}
+              // handleFilter={handleFilter}
+              // wordEntered={wordEntered}
+            />
+          }
         </div>
       </div>
       <div className='searchbar-wrapper'>
-        <SearchBar mobile />
+        {isvisible && 
+          <SearchBar 
+            mobile
+            list={list}
+            addSavedProducts={addSavedProducts}
+            // handleFilter={handleFilter}
+            // wordEntered={wordEntered}
+          />
+        }
       </div>
     </HeaderContainer>
   );

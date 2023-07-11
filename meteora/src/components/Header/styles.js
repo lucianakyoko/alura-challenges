@@ -7,7 +7,6 @@ export const HeaderContainer = styled.header`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* gap: 2.4rem; */
 
   background-color: ${colors.black};
 

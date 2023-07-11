@@ -16,7 +16,7 @@ export const NavigationContainer = styled.nav`
   position: absolute;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 3;
 
   &.active {
     display: ${props => props.mobile ? 'flex' : 'none'};
