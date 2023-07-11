@@ -1,3 +1,7 @@
 import styled from "styled-components";
-import { colors } from "@/styles/colors";
-import { device } from "@/styles/devices";
+
+export const BannerListContainer = styled.ul`
+  display: flex;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+`;

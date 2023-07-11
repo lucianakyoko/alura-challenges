@@ -4,9 +4,11 @@ import {
   CategoryItemContainer,
 } from './styles';
 
-export function CategoryItem({item}) {
+export function CategoryItem({item, onClick}) {
   return (
-    <CategoryItemContainer>
+    <CategoryItemContainer
+      onClick={onClick}
+    >
       <div className="image">
         <NextImage 
           src={item.image}

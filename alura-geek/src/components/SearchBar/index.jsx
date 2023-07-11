@@ -9,7 +9,6 @@ import {
   InputAndBtnWrapper,
   BigInput,
   DataResultWrapper,
-
 } from './style';
 import { CloseIcon } from '../icons/CloseIcon';
 

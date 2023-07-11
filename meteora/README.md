@@ -28,16 +28,16 @@ Para isso, eles solicitaram nossa ajuda como desenvolvedores para criar um site 
 
 | check | Requisitos: |
 | - | - |
-| . | Uma página inicial que contenha um buscador de produtos oferecidos pela empresa |
-| . | Um banner/carrossel que contenha informações sobre a coleção do momento |
-| . | Uma galeria com as categorias dos produtos disponíveis na loja |
-| . | Uma galeria com as informações dos produtos, como: imagem, nome do produto, descrição e link que leva até a página de “Saiba mais sobre o produto” |
+| ✔️ | Uma página inicial que contenha um buscador de produtos oferecidos pela empresa |
+| ✔️ | Um banner/carrossel que contenha informações sobre a coleção do momento |
+| ✔️ | Uma galeria com as categorias dos produtos disponíveis na loja |
+| ✔️ | Uma galeria com as informações dos produtos, como: imagem, nome do produto, descrição e link que leva até a página de “Saiba mais sobre o produto” |
 | . | Uma modal que contenha a imagem, o nome, a descrição, o preço, as variações do produto e a opção de adicionar na sacola |
-| . | Uma seção para divulgar as facilidades que a loja proporciona para realizar as compras |
-| . | Uma seção para cadastrar na newsletter e receber novidades |
-| . | Um rodapé com informação do site |
-| . | É muito importante que o site seja responsivo para dar aos clientes a facilidade de comprar através de dispositivos mobiles |
-| . | Layout base desenvolvido pela designer: [Figma](https://www.figma.com/file/2TLgt8UjsWUViWlmpXu5Fz/Loja-Meteora?type=design&node-id=2386%3A3188&t=KAouN13HHl42mSWm-1)  |
+| ✔️ | Uma seção para divulgar as facilidades que a loja proporciona para realizar as compras |
+| ✔️ | Uma seção para cadastrar na newsletter e receber novidades |
+| ✔️ | Um rodapé com informação do site |
+| ✔️ | É muito importante que o site seja responsivo para dar aos clientes a facilidade de comprar através de dispositivos mobiles |
+| ✔️ | Layout base desenvolvido pela designer: [Figma](https://www.figma.com/file/2TLgt8UjsWUViWlmpXu5Fz/Loja-Meteora?type=design&node-id=2386%3A3188&t=KAouN13HHl42mSWm-1)  |
 
 ---
 

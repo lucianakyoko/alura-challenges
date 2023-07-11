@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import { colors } from "@/styles/colors";
 import { device } from "@/styles/devices";
 import { headingH6, textNormal } from "@/styles/typography";
 
@@ -116,45 +115,4 @@ export const ContentWrapper = styled.div`
       }
     }
   }
-  /* .text-wrapper {
-    padding: 0 2.6rem;
-
-    display: flex;
-    flex-direction: column;
-    gap:  .8rem;
-
-    ${device.tabletS} {
-      gap:  1.6rem;
-      padding: 0;
-      align-items: ${props => props.even ? 'flex-end' : 'flex-start'};
-    }
-
-    .heading {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-
-      ${headingH6('white', 3.2)};
-      text-transform: uppercase;
-
-      ${device.tabletS} {
-        flex-direction: row;
-        gap: .8rem;
-      }
-
-      ${device.laptop} {
-        font-size: 4.8rem;
-      }
-    }
-
-    .paragraph {
-      color: ${colors.white};
-      font-size: 1.6rem;
-      text-align: center;
-      
-      ${device.laptop} {
-        font-size: 2rem;
-      }
-    }
-  } */
 `;

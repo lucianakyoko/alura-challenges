@@ -1,13 +1,19 @@
 import { BannerItem } from "./BannerItem";
 
-export function BannersList({bannerList}) {
-  const item1 = bannerList[0];
-  const item2 = bannerList[1];
-  const item3 = bannerList[2];
+import {
+  BannerListContainer
+} from './styles';
+
+export function BannersList({bannerList, currentBanner}) {
+  const index = bannerList.indexOf(bannerList[currentBanner]);
+  const banner = bannerList[currentBanner];
 
   return (
-    <ul>
-      <BannerItem bannerItem={item1} />
-    </ul>
+    <BannerListContainer>
+      <BannerItem
+        bannerItem={banner}
+        isActive={index === currentBanner}
+      />
+    </BannerListContainer>
   );
 }

@@ -3,13 +3,13 @@ import {
   ButtonsContainer
 } from './styles';
 
-export function Buttons() {
+export function Buttons({onPrevious, onNext}) {
   return (
     <ButtonsContainer>
-      <span className="button">
+      <span className="button" onClick={onPrevious}>
         <BsFillCaretLeftFill size={26} />
       </span>
-      <span className="button">
+      <span className="button" onClick={onNext}>
         <BsFillCaretRightFill size={26} />
       </span>
     </ButtonsContainer>

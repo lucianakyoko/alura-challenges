@@ -2,32 +2,32 @@ const src = '/categories/';
 
 export const categoriesList = [
   {
-    id: 1,
+    id: 'tshirt',
     label: 'Camisetas',
     image: `${src + 'tshirt.png'}`
   },
   {
-    id: 2,
+    id: 'purse',
     label: 'Bolsas',
     image: `${src + 'purse.png'}`
   },
   {
-    id: 3,
+    id: 'shoes',
     label: 'Calçados',
     image: `${src + 'shoe.png'}`
   },
   {
-    id: 4,
+    id: 'pants',
     label: 'Calças',
     image: `${src + 'pants.png'}`
   },
   {
-    id: 5,
+    id: 'jacket',
     label: 'Casacos',
     image: `${src + 'jacket.png'}`
   },
   {
-    id: 6,
+    id: 'glasses',
     label: 'Óculos',
     image: `${src + 'glasses.png'}`
   },

@@ -2,12 +2,15 @@ import {
   IndicatorsContainer
 } from './styles';
 
-export function Indicators() {
+export function Indicators({bannerList, currentBanner}) {
   return (
     <IndicatorsContainer>
-      <span className="indicator active"></span>
-      <span className="indicator"></span>
-      <span className="indicator"></span>
+      {bannerList.map((banner, i) => (
+        <span
+          key={banner.id}
+          className={currentBanner === i ? 'indicator active' : 'indicator'}
+        ></span>
+      ))}
     </IndicatorsContainer>
   );
 }

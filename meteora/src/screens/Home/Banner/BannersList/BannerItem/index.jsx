@@ -1,15 +1,14 @@
-import NextImage from "next/image";
-
 import {
   BannerItemContainer,
   BannerImage,
   ContentWrapper
 } from './styles';
 
-export function BannerItem({bannerItem}) {
+export function BannerItem({bannerItem, isActive}) {
 
   return (
     <BannerItemContainer
+      className={isActive ? 'active' : ''}
       even={bannerItem.id % 2 === 0 || bannerItem.id === 1}
     >
       <BannerImage image={bannerItem.image}></BannerImage>
