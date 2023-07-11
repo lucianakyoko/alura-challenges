@@ -5,11 +5,19 @@ import { Footer } from "@/components/Footer";
 import {
   PageContainer
 } from './styles';
+import Head from "next/head";
 
-export function PageTemplate({children}) {
+export function PageTemplate({title,children, isVisible, list, addSavedProducts}) {
   return (
     <PageContainer className={interFont.className}>
-      <Header />
+      <Head>
+        <title>{title}</title>
+      </Head>
+      <Header 
+        isvisible={isVisible}
+        list={list}
+        addSavedProducts={addSavedProducts}
+      />
       <div className="page-content">
         {children}
       </div>
