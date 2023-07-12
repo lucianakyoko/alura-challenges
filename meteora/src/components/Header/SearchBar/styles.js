@@ -50,11 +50,15 @@ export const SearchBarContainer = styled.div`
     gap: 1.6rem;
 
     position: absolute;
-    top: 16rem;
+    top: 14rem;
 
-    z-index: 2;
+    z-index: 3;
 
+    ${device.mobileM} {
+      width: 30rem;
+    }
     ${device.tablet} {
+      width: 26rem;
       top: 5.2rem;
     }
   }

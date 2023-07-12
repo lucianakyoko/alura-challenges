@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { ModalTemplate } from "../templates/ModalTemplate";
 import { BagItem } from "./BagItem";
-import { Coupon } from "./Coupon";
 
 import {
   ShoppingBagContainer,

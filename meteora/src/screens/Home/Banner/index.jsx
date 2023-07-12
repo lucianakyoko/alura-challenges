@@ -15,13 +15,13 @@ export function Banner() {
   const nextBanner = () => setCurrentBanner(prevBanner => (prevBanner + 1) % totalBanners);
   const previousBanner = () => setCurrentBanner(prevBanner => (prevBanner - 1 + totalBanners) % totalBanners);
   
-  // useEffect(() => {
-  //   const timer = setInterval(() => {
-  //     setCurrentBanner(prevBanner => (prevBanner + 1) % totalBanners);
-  //   }, 3000);
+  useEffect(() => {
+    const timer = setInterval(() => {
+      setCurrentBanner(prevBanner => (prevBanner + 1) % totalBanners);
+    }, 3000);
 
-  //   return () => clearInterval(timer)
-  // }, []);
+    return () => clearInterval(timer)
+  }, []);
 
   return (
     <BannerContainer>

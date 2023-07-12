@@ -8,18 +8,26 @@ export const ResultItemContainer = styled.li`
   .image {
     width: 5.6rem;
     height: 6.72rem;
-
+    
     background-image: url(${props => props.img});
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    &:hover {
+      cursor: pointer;
+      opacity: .9;
+    }
   }
-
+  
   .title-price-wrapper {
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
-
+    
+    &:hover {
+      cursor: pointer;
+      opacity: .9;
+    }
     .title, .price {
       ${headingH6('', 1.4)}
     }

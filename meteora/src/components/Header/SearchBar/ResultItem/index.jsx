@@ -1,21 +1,23 @@
 import { useState } from 'react';
+import { ProductModal } from '@/components/Products/ProductModal';
 import {
   ResultItemContainer
 } from './styles';
-import { ProductModal } from '@/components/Products/ProductModal';
 
-export function ResultItem({item, handleFilter, addSavedProducts}) {
+export function ResultItem({item, addSavedProducts}) {
   const [modal, setModal] = useState(false);
-  const handleModal = () => setModal(!modal);
+  const handleModal = () => {
+    setModal(!modal);
+  };
 
   return (
     <ResultItemContainer 
-      onClick={handleModal} 
       className='result-item'
       img={item.imgSrc}
     >
-      <div className='image'></div>
-      <div className='title-price-wrapper'>
+
+      <div onClick={handleModal} className='image'></div>
+      <div onClick={handleModal} className='title-price-wrapper'>
         <p className='title'>{item.label}</p>
         <span className='price'>R$<span>{item.price}</span>,00</span>
       </div>

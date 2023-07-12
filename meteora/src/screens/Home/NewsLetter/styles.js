@@ -46,6 +46,16 @@ export const NewsLetterContainer = styled.div`
       border: none;
       ${headingH6('white', 1.6)}
       letter-spacing:  .457px;
+
+      &:hover {
+        cursor: pointer;
+        opacity: .9;
+      }
+    }
+
+    .error-message {
+      color: ${colors.danger};
+      font-size: 1.2rem;
     }
   }
 `;

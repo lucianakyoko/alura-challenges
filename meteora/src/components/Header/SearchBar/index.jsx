@@ -5,7 +5,6 @@ import {
   SearchBarContainer,
 } from './styles';
 
-
 export function SearchBar({mobile, list, addSavedProducts}) {
   const [filteredData, setFilteredData] = useState([]);
   const [wordEntered, setWordEntered] = useState('');

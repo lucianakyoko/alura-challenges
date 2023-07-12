@@ -1,5 +1,8 @@
 import { ModalTemplate } from "@/components/templates/ModalTemplate";
-import { useState } from "react";
+
+import {
+  CheckoutModalContainer
+} from './styles';
 
 export function CheckoutModal({handleModal}) {
   return (
@@ -7,7 +10,9 @@ export function CheckoutModal({handleModal}) {
       text="Compra finalizada"
       handleModal={handleModal}
     >
-      <p>Compra finalizada com sucesso!</p>
+      <CheckoutModalContainer>
+        <p className="message">Compra finalizada com sucesso!</p>
+      </CheckoutModalContainer>
     </ModalTemplate>
   );
 }

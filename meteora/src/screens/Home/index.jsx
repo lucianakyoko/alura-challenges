@@ -1,17 +1,14 @@
 import { useState } from "react";
+import { categoriesList } from "@/datas/categoryList";
+import { facilityList } from "@/datas/facilityList";
 import { PageTemplate } from "@/components/templates/PageTemplate";
 import { Products } from "@/components/Products";
-import { Banner } from "./Banner";
-import { Categories } from "./Categories";
 import { ShoppingBagModal } from "@/components/ShoppingBagModal";
 import { BagIconButton } from "@/components/BagIconButton";
-
+import { Banner } from "./Banner";
+import { Categories } from "./Categories";
 import { Facilities } from "./Facilities";
 import { NewsLetter } from "./NewsLetter";
-
-import { categoriesList } from "@/datas/categoryList";
-import { productList } from "@/datas/productList";
-import { facilityList } from "@/datas/facilityList";
 
 import {
   HomeContentContainer,
@@ -37,9 +34,9 @@ export function HomeScreen({products}) {
     const updatedList = savedProducts.filter(product => product !== item);
     setSavedProducts(updatedList);
   }
-  const filteredList = productList.filter(item => item.category === selectCategory);
-  const currentList = filteredList.length !== 0 ? filteredList : productList;
-  
+  const filteredList = products.filter(item => item.category === selectCategory);
+  const currentList = filteredList.length !== 0 ? filteredList : products;
+
   const handleCheckout = () => {
     handleModal();
     setSavedProducts([]);
@@ -50,9 +47,8 @@ export function HomeScreen({products}) {
     <PageTemplate
       title='Meteora'
       isVisible
-      list={productList}
       addSavedProducts={addSavedProducts}
-      // list={products}
+      list={products}
     >
       <Banner/> 
       <HomeContentContainer>
@@ -69,8 +65,6 @@ export function HomeScreen({products}) {
           <section className="section products">
             <h2 className="section-title">Produtos que estão bombando!</h2>
             <Products 
-              // list={products} 
-              // list={productList} 
               list={currentList}
               addSavedProducts={addSavedProducts}
             />
@@ -110,5 +104,3 @@ export function HomeScreen({products}) {
     </PageTemplate>
   );
 }
-
-

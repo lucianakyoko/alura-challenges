@@ -36,7 +36,7 @@ export function ModalImage({image}) {
         alt="Imagem do produto" 
         className={isZoomed ? 'product-image zoomed' : 'product-image'}
         style={{
-          transform: `scale(${isZoomed ? 4 : 1})`,
+          transform: `scale(${isZoomed ? 2 : 1})`,
           transformOrigin: `${mousePosition.x}% ${mousePosition.y}%`,
         }}
       />
